@@ -22,20 +22,34 @@ const CallToAction = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
-            <Button 
-              size="lg" 
-              className="bg-card text-primary hover:bg-card/90 text-lg px-10 py-7 shadow-elevated border-2 border-primary-foreground/20"
-            >
-              <Heart className="mr-2 h-6 w-6 fill-current" />
-              Donate €0.50
-            </Button>
-            <Button 
-              size="lg" 
-              className="bg-secondary text-secondary-foreground hover:bg-secondary/90 text-lg px-10 py-7 shadow-elevated"
-            >
-              <Heart className="mr-2 h-6 w-6 fill-current" />
-              Donate €0.75
-            </Button>
+            <form action="https://www.paypal.com/donate" method="post" target="_blank">
+              <input type="hidden" name="business" value="anistouati74@gmail.com" />
+              <input type="hidden" name="amount" value="0.50" />
+              <input type="hidden" name="currency_code" value="EUR" />
+              <input type="hidden" name="item_name" value="Tunisia Sustainable Farm Project - €0.50 Donation" />
+              <Button 
+                type="submit"
+                size="lg" 
+                className="bg-card text-primary hover:bg-card/90 text-lg px-10 py-7 shadow-elevated border-2 border-primary-foreground/20"
+              >
+                <Heart className="mr-2 h-6 w-6 fill-current" />
+                Donate €0.50
+              </Button>
+            </form>
+            <form action="https://www.paypal.com/donate" method="post" target="_blank">
+              <input type="hidden" name="business" value="anistouati74@gmail.com" />
+              <input type="hidden" name="amount" value="0.75" />
+              <input type="hidden" name="currency_code" value="EUR" />
+              <input type="hidden" name="item_name" value="Tunisia Sustainable Farm Project - €0.75 Donation" />
+              <Button 
+                type="submit"
+                size="lg" 
+                className="bg-secondary text-secondary-foreground hover:bg-secondary/90 text-lg px-10 py-7 shadow-elevated"
+              >
+                <Heart className="mr-2 h-6 w-6 fill-current" />
+                Donate €0.75
+              </Button>
+            </form>
           </div>
 
           <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-lg p-8 border border-primary-foreground/20">

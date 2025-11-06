@@ -46,11 +46,17 @@ const Hero = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="text-lg px-8 py-6 bg-gradient-to-r from-primary to-accent hover:opacity-90 transition-opacity shadow-elevated">
-              Donate €0.50 Now
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+            <form action="https://www.paypal.com/donate" method="post" target="_blank">
+              <input type="hidden" name="business" value="anistouati74@gmail.com" />
+              <input type="hidden" name="amount" value="0.50" />
+              <input type="hidden" name="currency_code" value="EUR" />
+              <input type="hidden" name="item_name" value="Tunisia Sustainable Farm Project - €0.50 Donation" />
+              <Button type="submit" size="lg" className="text-lg px-8 py-6 bg-gradient-to-r from-primary to-accent hover:opacity-90 transition-opacity shadow-elevated">
+                Donate €0.50 Now
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </form>
+            <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}>
               Learn More
             </Button>
           </div>
