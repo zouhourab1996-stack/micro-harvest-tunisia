@@ -1,7 +1,25 @@
 import { Button } from "@/components/ui/button";
-import { Heart, Share2 } from "lucide-react";
+import { Heart, Share2, MessageCircle } from "lucide-react";
+import { Facebook, Instagram } from "lucide-react";
 
 const CallToAction = () => {
+  const shareUrl = window.location.href;
+  const shareText = "Help build a sustainable farm in Kasserine, Tunisia! Donate just €0.50 to support rural development and change lives.";
+  
+  const handleFacebookShare = () => {
+    window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`, '_blank');
+  };
+  
+  const handleInstagramShare = () => {
+    // Instagram doesn't support direct sharing via URL, so we copy to clipboard
+    navigator.clipboard.writeText(`${shareText} ${shareUrl}`);
+    alert('Campaign link copied! Share it on Instagram.');
+  };
+  
+  const handleWhatsApp = () => {
+    window.open(`https://wa.me/21693816607?text=${encodeURIComponent(shareText + ' ' + shareUrl)}`, '_blank');
+  };
+
   return (
     <section className="py-20 bg-gradient-to-r from-primary via-primary to-accent relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
@@ -60,14 +78,32 @@ const CallToAction = () => {
               Can't donate right now? You can still help by sharing this campaign with your friends, 
               family, and social networks. Every share brings us closer to our goal!
             </p>
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
-            >
-              <Share2 className="mr-2 h-5 w-5" />
-              Share Campaign
-            </Button>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <Button 
+                onClick={handleFacebookShare}
+                size="lg"
+                className="bg-[#1877F2] hover:bg-[#1877F2]/90 text-white border-0"
+              >
+                <Facebook className="mr-2 h-5 w-5" />
+                Share on Facebook
+              </Button>
+              <Button 
+                onClick={handleInstagramShare}
+                size="lg"
+                className="bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#F77737] hover:opacity-90 text-white border-0"
+              >
+                <Instagram className="mr-2 h-5 w-5" />
+                Share on Instagram
+              </Button>
+              <Button 
+                onClick={handleWhatsApp}
+                size="lg"
+                className="bg-[#25D366] hover:bg-[#25D366]/90 text-white border-0"
+              >
+                <MessageCircle className="mr-2 h-5 w-5" />
+                Contact via WhatsApp
+              </Button>
+            </div>
           </div>
 
           <div className="mt-12 text-primary-foreground/80 text-sm">
