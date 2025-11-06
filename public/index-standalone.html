@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Sustainable Agriculture in Tunisia - Donate €0.50 to Help Farmers</title>
+    <meta name="description" content="Help build a sustainable farm in Kasserine, Tunisia. Donate just €0.50 or €0.75 to support rural development, plant trees, and change lives through micro-donations. Join 200,000 supporters worldwide.">
+    <meta name="keywords" content="donate for Tunisia farm, help farmers in Africa, sustainable agriculture donation, support Kasserine project, micro donation agriculture, charity for farmers, environmental project in Tunisia, farm crowdfunding, rural development Africa, plant trees donation">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Support Sustainable Agriculture in Tunisia - Donate €0.50">
+    <meta property="og:description" content="Small donations from many people can change lives. Help build a sustainable farm in Kasserine, Tunisia with just €0.50. Join thousands of supporters worldwide.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yoursite.com/">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Support Sustainable Agriculture in Tunisia - Donate €0.50">
+    <meta name="twitter:description" content="Small donations from many people can change lives. Help build a sustainable farm in Kasserine, Tunisia.">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "DonateAction",
+      "name": "Tunisia Sustainable Farm Project",
+      "description": "Help build a sustainable farm in Kasserine, Tunisia through micro-donations",
+      "recipient": {
+        "@type": "Organization",
+        "name": "Tunisia Farm Project"
+      },
+      "potentialAction": {
+        "@type": "DonateAction",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "price": "0.50",
+          "priceCurrency": "EUR"
+        }
+      }
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #2d3a28;
+            background-color: #f9f7f4;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(71, 94, 56, 0.95), rgba(71, 94, 56, 0.8)), 
+                        url('https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=1920') center/cover;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            color: white;
+            padding: 80px 20px;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+        
+        .progress-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 40px rgba(71, 94, 56, 0.2);
+            color: #2d3a28;
+        }
+        
+        .progress-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.75rem;
+            flex-wrap: wrap;
+        }
+        
+        .progress-bar-container {
+            width: 100%;
+            height: 12px;
+            background: #e5e1db;
+            border-radius: 6px;
+            margin-bottom: 0.5rem;
+            overflow: hidden;
+        }
+        
+        .progress-bar {
+            height: 100%;
+            width: 22.5%;
+            background: linear-gradient(90deg, #475e38, #d9a962);
+            border-radius: 6px;
+            transition: width 0.5s ease;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            font-size: 1.125rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #475e38, #d9a962);
+            color: white;
+            box-shadow: 0 10px 40px rgba(71, 94, 56, 0.2);
+        }
+        
+        .btn-primary:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+        
+        .btn-outline:hover {
+            background: white;
+            color: #475e38;
+        }
+        
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        /* Section Styles */
+        section {
+            padding: 80px 20px;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: #2d3a28;
+        }
+        
+        .section-description {
+            font-size: 1.125rem;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            color: #5c6b57;
+        }
+        
+        /* Feature Grid */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(71, 94, 56, 0.15);
+            transition: all 0.3s ease;
+            border: 1px solid #e5e1db;
+        }
+        
+        .feature-card:hover {
+            box-shadow: 0 10px 40px rgba(71, 94, 56, 0.2);
+            transform: translateY(-4px);
+        }
+        
+        .feature-icon {
+            width: 64px;
+            height: 64px;
+            background: rgba(71, 94, 56, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+        
+        .feature-card h3 {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 0.75rem;
+            color: #2d3a28;
+        }
+        
+        .feature-card p {
+            color: #5c6b57;
+        }
+        
+        /* Impact Box */
+        .impact-box {
+            background: rgba(217, 169, 98, 0.1);
+            border: 1px solid rgba(217, 169, 98, 0.2);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-top: 3rem;
+            text-align: center;
+        }
+        
+        .impact-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #2d3a28;
+        }
+        
+        /* Math Section */
+        .math-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .math-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(71, 94, 56, 0.15);
+        }
+        
+        .math-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #475e38;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Fund Allocation */
+        .allocation-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 20px rgba(71, 94, 56, 0.15);
+            border: 1px solid #e5e1db;
+        }
+        
+        .allocation-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .allocation-title {
+            font-weight: bold;
+            color: #2d3a28;
+        }
+        
+        .allocation-amount {
+            font-weight: bold;
+            color: #475e38;
+            font-size: 1.125rem;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #475e38, #d9a962);
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: radial-gradient(circle at 2px 2px, rgba(255, 255, 255, 0.1) 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+        
+        .cta-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .donate-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .btn-donate {
+            background: white;
+            color: #475e38;
+            padding: 1.5rem 2.5rem;
+            font-size: 1.125rem;
+            font-weight: bold;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-donate:hover {
+            background: rgba(255, 255, 255, 0.95);
+        }
+        
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .contact-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(71, 94, 56, 0.15);
+            border: 1px solid #e5e1db;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #2d3a28;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #e5e1db;
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 1rem;
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        /* Footer */
+        footer {
+            background: #475e38;
+            color: white;
+            padding: 3rem 20px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-section p,
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-section a:hover {
+            color: white;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding-top: 2rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1.125rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .button-group {
+                flex-direction: column;
+            }
+            
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div style="max-width: 800px;">
+                <h1>Small Donations Can Change Lives</h1>
+                <p>Donate just €0.50 to help build a sustainable farm in Kasserine, Tunisia. Together, we can create lasting change for local communities.</p>
+                
+                <div class="progress-card">
+                    <div class="progress-header">
+                        <span style="font-weight: 600;">Campaign Progress</span>
+                        <span style="font-weight: bold; color: #475e38;">45,000 of 200,000 supporters</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <p style="font-size: 0.875rem; color: #5c6b57;">23% funded • 155,000 supporters needed</p>
+                </div>
+
+                <div class="button-group">
+                    <form action="https://www.paypal.com/donate" method="post" target="_blank" style="flex: 1;">
+                        <input type="hidden" name="business" value="anistouati74@gmail.com">
+                        <input type="hidden" name="amount" value="0.50">
+                        <input type="hidden" name="currency_code" value="EUR">
+                        <input type="hidden" name="item_name" value="Tunisia Sustainable Farm Project - €0.50 Donation">
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Donate €0.50 Now →</button>
+                    </form>
+                    <a href="#about" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Project Section -->
+    <section id="about" style="background: linear-gradient(to bottom, #f9f7f4, rgba(229, 225, 219, 0.3));">
+        <div class="container">
+            <h2 class="section-title">Building a Sustainable Future in Kasserine</h2>
+            <p class="section-description">
+                This agricultural project aims to transform 10 hectares of land in Kasserine, Tunisia into a thriving, 
+                sustainable farm. With your support, we'll create jobs, provide fresh food, and demonstrate the power 
+                of community-driven development.
+            </p>
+
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💧</div>
+                    <h3>Artesian Well</h3>
+                    <p>Drill a sustainable water source for irrigation and livestock</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Protective Fence</h3>
+                    <p>Secure the 10-hectare farmland for safe operations</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏠</div>
+                    <h3>Poultry House</h3>
+                    <p>Build modern facilities for chicken farming</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌱</div>
+                    <h3>Fruit Trees & Livestock</h3>
+                    <p>Plant olive, almond, pomegranate, fig trees and raise cows and sheep</p>
+                </div>
+            </div>
+
+            <div class="impact-box">
+                <h3>Long-Term Impact</h3>
+                <p>
+                    This project will provide sustainable income for local families, create employment opportunities, 
+                    contribute to food security in the region, and serve as a model for agricultural development in Tunisia. 
+                    Your micro-donation is an investment in the future of an entire community.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Donate Section -->
+    <section style="background: white;">
+        <div class="container">
+            <h2 class="section-title">Why Small Donations Matter</h2>
+            <p class="section-description">
+                The power of micro-donations lies in their simplicity and accessibility. 
+                When thousands of people contribute just €0.50 or €0.75, we can achieve extraordinary things together.
+            </p>
+
+            <div class="feature-grid">
+                <div style="text-align: center; padding: 1.5rem;">
+                    <div class="feature-icon" style="margin: 0 auto 1rem;">👥</div>
+                    <h3 style="margin-bottom: 0.75rem;">Collective Power</h3>
+                    <p style="color: #5c6b57;">200,000 people donating €0.50 = €100,000+ raised for meaningful change</p>
+                </div>
+                <div style="text-align: center; padding: 1.5rem;">
+                    <div class="feature-icon" style="margin: 0 auto 1rem;">❤️</div>
+                    <h3 style="margin-bottom: 0.75rem;">Accessible to Everyone</h3>
+                    <p style="color: #5c6b57;">Everyone can afford €0.50. No donation is too small when we work together</p>
+                </div>
+                <div style="text-align: center; padding: 1.5rem;">
+                    <div class="feature-icon" style="margin: 0 auto 1rem;">📈</div>
+                    <h3 style="margin-bottom: 0.75rem;">Maximum Impact</h3>
+                    <p style="color: #5c6b57;">Small contributions add up to create lasting economic opportunities</p>
+                </div>
+                <div style="text-align: center; padding: 1.5rem;">
+                    <div class="feature-icon" style="margin: 0 auto 1rem;">🌍</div>
+                    <h3 style="margin-bottom: 0.75rem;">Global Community</h3>
+                    <p style="color: #5c6b57;">Join supporters from around the world making a difference in rural Tunisia</p>
+                </div>
+            </div>
+
+            <div style="background: linear-gradient(to right, rgba(71, 94, 56, 0.05), rgba(217, 169, 98, 0.05)); border-radius: 16px; padding: 3rem 2rem; margin-top: 3rem;">
+                <h3 style="text-align: center; font-size: 1.875rem; margin-bottom: 2rem;">The Math is Simple</h3>
+                <div class="math-grid">
+                    <div class="math-card">
+                        <div class="math-value">€0.50</div>
+                        <div style="font-size: 0.875rem; color: #5c6b57;">Your donation</div>
+                    </div>
+                    <div class="math-card">
+                        <div class="math-value" style="color: #d9a962;">×200,000</div>
+                        <div style="font-size: 0.875rem; color: #5c6b57;">Supporters</div>
+                    </div>
+                    <div class="math-card">
+                        <div class="math-value" style="color: #a0674d;">€100,000</div>
+                        <div style="font-size: 0.875rem; color: #5c6b57;">Total raised</div>
+                    </div>
+                </div>
+                <p style="text-align: center; color: #5c6b57; margin-top: 2rem; font-size: 1.125rem;">
+                    Your €0.50 might seem small, but together with thousands of others, it builds a sustainable farm, 
+                    creates jobs, and transforms lives in Kasserine, Tunisia.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fund Allocation Section -->
+    <section id="funds" style="background: linear-gradient(to bottom, rgba(229, 225, 219, 0.3), #f9f7f4);">
+        <div class="container">
+            <h2 class="section-title">How Your Donation Will Be Used</h2>
+            <p class="section-description">
+                Full transparency is our commitment. Here's exactly how every euro will be invested 
+                to build a sustainable farm that benefits the entire Kasserine community.
+            </p>
+
+            <div style="max-width: 900px; margin: 0 auto;">
+                <div class="allocation-item">
+                    <div class="allocation-header">
+                        <div>
+                            <div class="allocation-title">Artesian Well Drilling</div>
+                            <div style="font-size: 0.875rem; color: #5c6b57;">Deep water source for sustainable irrigation</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <div class="allocation-amount">€40,000</div>
+                            <div style="font-size: 0.875rem; color: #5c6b57;">27%</div>
+                        </div>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 27%;"></div>
+                    </div>
+                </div>
+
+                <div class="allocation-item">
+                    <div class="allocation-header">
+                        <div>
+                            <div class="allocation-title">Protective Fencing</div>
+                            <div style="font-size: 0.875rem; color: #5c6b57;">Secure 10 hectares of farmland</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <div class="allocation-amount">€25,000</div>
+                            <div style="font-size: 0.875rem; color: #5c6b57;">17%</div>
+                        </div>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 17%;"></div>
+                    </div>
+                </div>
+
+                <div class="allocation-item">
+                    <div class="allocation-header">
+                        <div>
+                            <div class="allocation-title">Poultry House Construction</div>
+                            <div style="font-size: 0.875rem; color: #5c6b57;">Modern chicken farming facilities</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <div class="allocation-amount">€35,000</div>
+                            <div style="font-size: 0.875rem; color: #5c6b57;">23%</div>
+                        </div>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 23%;"></div>
+                    </div>
+                </div>
+
+                <div class="allocation-item">
+                    <div class="allocation-header">
+                        <div>
+                            <div class="allocation-title">Livestock & Initial Feed</div>
+                            <div style="font-size: 0.875rem; color: #5c6b57;">Cows, sheep, and starting supplies</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <div class="allocation-amount">€30,000</div>
+                            <div style="font-size: 0.875rem; color: #5c6b57;">20%</div>
+                        </div>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 20%;"></div>
+                    </div>
+                </div>
+
+                <div class="allocation-item">
+                    <div class="allocation-header">
+                        <div>
+                            <div class="allocation-title">Fruit Trees & Planting</div>
+                            <div style="font-size: 0.875rem; color: #5c6b57;">Olive, almond, pomegranate, and fig trees</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <div class="allocation-amount">€15,000</div>
+                            <div style="font-size: 0.875rem; color: #5c6b57;">10%</div>
+                        </div>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 10%;"></div>
+                    </div>
+                </div>
+
+                <div class="allocation-item">
+                    <div class="allocation-header">
+                        <div>
+                            <div class="allocation-title">Operations & Maintenance</div>
+                            <div style="font-size: 0.875rem; color: #5c6b57;">First year operational costs</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <div class="allocation-amount">€5,000</div>
+                            <div style="font-size: 0.875rem; color: #5c6b57;">3%</div>
+                        </div>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 3%;"></div>
+                    </div>
+                </div>
+
+                <div style="background: rgba(71, 94, 56, 0.1); border: 2px solid rgba(71, 94, 56, 0.2); border-radius: 12px; padding: 1.5rem; margin-top: 2rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1.125rem; font-weight: 600;">Total Goal:</span>
+                        <span style="font-size: 1.875rem; font-weight: bold; color: #475e38;">€150,000</span>
+                    </div>
+                </div>
+
+                <div style="background: rgba(217, 169, 98, 0.1); border: 1px solid rgba(217, 169, 98, 0.2); border-radius: 12px; padding: 1.5rem; margin-top: 1.5rem; text-align: center;">
+                    <h3 style="font-weight: bold; margin-bottom: 0.75rem;">100% Transparency Guarantee</h3>
+                    <p style="font-size: 0.875rem; color: #5c6b57;">
+                        Every expense will be documented and shared with our supporters. You'll receive regular updates 
+                        on the project's progress, including photos, videos, and financial reports.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container cta-content">
+            <h2 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 1.5rem;">Ready to Make a Difference?</h2>
+            <p style="font-size: 1.25rem; margin-bottom: 3rem; opacity: 0.95; max-width: 900px; margin-left: auto; margin-right: auto;">
+                Join thousands of supporters worldwide. Your €0.50 or €0.75 donation will help build a sustainable 
+                farm, create jobs, and transform lives in Kasserine, Tunisia. Together, we can achieve the extraordinary.
+            </p>
+
+            <div class="donate-buttons">
+                <form action="https://www.paypal.com/donate" method="post" target="_blank">
+                    <input type="hidden" name="business" value="anistouati74@gmail.com">
+                    <input type="hidden" name="amount" value="0.50">
+                    <input type="hidden" name="currency_code" value="EUR">
+                    <input type="hidden" name="item_name" value="Tunisia Sustainable Farm Project - €0.50 Donation">
+                    <button type="submit" class="btn btn-donate">❤️ Donate €0.50</button>
+                </form>
+                <form action="https://www.paypal.com/donate" method="post" target="_blank">
+                    <input type="hidden" name="business" value="anistouati74@gmail.com">
+                    <input type="hidden" name="amount" value="0.75">
+                    <input type="hidden" name="currency_code" value="EUR">
+                    <input type="hidden" name="item_name" value="Tunisia Sustainable Farm Project - €0.75 Donation">
+                    <button type="submit" class="btn btn-donate" style="background: #a0674d;">❤️ Donate €0.75</button>
+                </form>
+            </div>
+
+            <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 12px; padding: 2rem; max-width: 800px; margin: 0 auto;">
+                <h3 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem;">Spread the Word</h3>
+                <p style="margin-bottom: 1.5rem; opacity: 0.9;">
+                    Can't donate right now? You can still help by sharing this campaign with your friends, 
+                    family, and social networks. Every share brings us closer to our goal!
+                </p>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://yoursite.com" target="_blank" class="btn btn-outline" style="display: inline-block;">📢 Share Campaign</a>
+            </div>
+
+            <div style="margin-top: 3rem; opacity: 0.8; font-size: 0.875rem;">
+                <p>✓ Secure payment processing • ✓ Tax-deductible • ✓ 100% transparency</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="background: rgba(229, 225, 219, 0.3);">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-description">
+                Have questions about the project? Want to partner with us? We'd love to hear from you.
+            </p>
+
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <h3 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1.5rem;">Contact Information</h3>
+                    
+                    <div style="display: flex; align-items: start; margin-bottom: 1.5rem;">
+                        <div class="feature-icon" style="margin-right: 1rem; flex-shrink: 0;">📧</div>
+                        <div>
+                            <h4 style="font-weight: 600; margin-bottom: 0.25rem;">Email Us</h4>
+                            <p style="color: #5c6b57;">info@tunisiafarmproject.com</p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; align-items: start;">
+                        <div class="feature-icon" style="margin-right: 1rem; flex-shrink: 0;">💬</div>
+                        <div>
+                            <h4 style="font-weight: 600; margin-bottom: 0.25rem;">Project Updates</h4>
+                            <p style="color: #5c6b57;">Follow our progress on social media and through email newsletters</p>
+                        </div>
+                    </div>
+
+                    <div style="background: rgba(217, 169, 98, 0.1); border: 1px solid rgba(217, 169, 98, 0.2); border-radius: 8px; padding: 1.5rem; margin-top: 2rem;">
+                        <h4 style="font-weight: 600; margin-bottom: 0.5rem;">Response Time</h4>
+                        <p style="font-size: 0.875rem; color: #5c6b57;">
+                            We typically respond to all inquiries within 24-48 hours. Thank you for your patience!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1.5rem;">Send a Message</h3>
+                    
+                    <form action="mailto:anistouati74@gmail.com" method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" placeholder="Tell us how we can help..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Tunisia Farm Project</h3>
+                    <p>Building a sustainable agricultural future in Kasserine, Tunisia through the power of micro-donations.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="#about">About the Project</a>
+                    <a href="#funds">Fund Allocation</a>
+                    <a href="#contact">Contact Us</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Our Mission</h3>
+                    <p>To demonstrate that small donations from many people can create lasting positive change in rural communities.</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Made with ❤️ for a sustainable future</p>
+                <p style="font-size: 0.75rem; margin-top: 0.5rem; opacity: 0.6;">© 2025 Tunisia Farm Project. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
