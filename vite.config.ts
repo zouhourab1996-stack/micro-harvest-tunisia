@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: "/micro-harvest-tunisia/", // 👈 مهم جداً
+  base: '/micro-harvest-tunisia/',
   server: {
     host: "::",
     port: 8080,
