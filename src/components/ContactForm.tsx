@@ -42,7 +42,7 @@ const ContactForm = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground mb-1">Email Us</h4>
-                    <p className="text-muted-foreground">info@tunisiafarmproject.com</p>
+                    <a href="mailto:zouhourab1996@gmail.com" className="text-primary hover:underline">zouhourab1996@gmail.com</a>
                   </div>
                 </div>
 
