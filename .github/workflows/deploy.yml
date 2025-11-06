@@ -22,12 +22,6 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Disable Jekyll (nojekyll)
-        run: |
-          if [ -d "./dist" ]; then
-            touch ./dist/.nojekyll
-          fi
-
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
