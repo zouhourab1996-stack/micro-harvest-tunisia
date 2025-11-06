@@ -1,6 +1,13 @@
 import { Heart } from "lucide-react";
 
 const Footer = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <footer className="bg-primary text-primary-foreground py-12">
       <div className="container mx-auto px-4">
@@ -16,9 +23,30 @@ const Footer = () => {
             <div>
               <h3 className="text-xl font-bold mb-4">Quick Links</h3>
               <ul className="space-y-2 text-sm">
-                <li><a href="#about" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">About the Project</a></li>
-                <li><a href="#funds" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Fund Allocation</a></li>
-                <li><a href="#contact" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Contact Us</a></li>
+                <li>
+                  <button 
+                    onClick={() => scrollToSection('about')} 
+                    className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-left"
+                  >
+                    About the Project
+                  </button>
+                </li>
+                <li>
+                  <button 
+                    onClick={() => scrollToSection('funds')} 
+                    className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-left"
+                  >
+                    Fund Allocation
+                  </button>
+                </li>
+                <li>
+                  <button 
+                    onClick={() => scrollToSection('contact')} 
+                    className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-left"
+                  >
+                    Contact Us
+                  </button>
+                </li>
               </ul>
             </div>
 
