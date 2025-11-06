@@ -5,6 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: "/micro-harvest-tunisia/", // 👈 هذا السطر هو المهم لإصلاح الصفحة البيضاء
   server: {
     host: "::",
     port: 8080,
