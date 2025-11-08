@@ -1,23 +1,21 @@
 import { Button } from "@/components/ui/button";
-import { Heart, Share2, MessageCircle } from "lucide-react";
-import { Facebook, Instagram } from "lucide-react";
+import { ArrowRight, MessageCircle } from "lucide-react";
+import { Facebook } from "lucide-react";
 
 const CallToAction = () => {
   const shareUrl = window.location.href;
-  const shareText = "Help build a sustainable farm in Kasserine, Tunisia! Donate just €0.50 to support rural development and change lives.";
+  const shareText = "Please help support the Higgins family. Bruce was a decorated Boston Police Detective who touched countless lives.";
   
   const handleFacebookShare = () => {
-    window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`, '_blank');
-  };
-  
-  const handleInstagramShare = () => {
-    // Instagram doesn't support direct sharing via URL, so we copy to clipboard
-    navigator.clipboard.writeText(`${shareText} ${shareUrl}`);
-    alert('Campaign link copied! Share it on Instagram.');
+    const url = encodeURIComponent(shareUrl);
+    const text = encodeURIComponent("Honor Bruce Higgins: Support His Beloved Family - Help Lori, Maddie, and Ryan during this difficult time");
+    window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}&quote=${text}`, '_blank');
   };
   
   const handleWhatsApp = () => {
-    window.open(`https://wa.me/21693816607?text=${encodeURIComponent(shareText + ' ' + shareUrl)}`, '_blank');
+    const url = encodeURIComponent(shareUrl);
+    const text = encodeURIComponent(`${shareText} Every donation helps.`);
+    window.open(`https://wa.me/?text=${text}%20${url}`, '_blank');
   };
 
   return (
@@ -32,40 +30,24 @@ const CallToAction = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-6">
-            Ready to Make a Difference?
+            Honor Bruce's Legacy Today
           </h2>
           <p className="text-xl text-primary-foreground/90 mb-12 leading-relaxed">
-            Join thousands of supporters worldwide. Your €0.50 or €0.75 donation will help build a sustainable 
-            farm, create jobs, and transform lives in Kasserine, Tunisia. Together, we can achieve the extraordinary.
+            Your donation shows Lori, Maddie, and Ryan that they are not alone. Help us carry on Bruce's legacy and take care of the family he loved so deeply.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
             <form action="https://www.paypal.com/donate" method="post" target="_blank">
               <input type="hidden" name="business" value="anistouati74@gmail.com" />
-              <input type="hidden" name="amount" value="0.50" />
-              <input type="hidden" name="currency_code" value="EUR" />
-              <input type="hidden" name="item_name" value="Tunisia Sustainable Farm Project - €0.50 Donation" />
+              <input type="hidden" name="currency_code" value="USD" />
+              <input type="hidden" name="item_name" value="Support for Bruce Higgins Family" />
               <Button 
                 type="submit"
                 size="lg" 
                 className="bg-card text-primary hover:bg-card/90 text-lg px-10 py-7 shadow-elevated border-2 border-primary-foreground/20"
               >
-                <Heart className="mr-2 h-6 w-6 fill-current" />
-                Donate €0.50
-              </Button>
-            </form>
-            <form action="https://www.paypal.com/donate" method="post" target="_blank">
-              <input type="hidden" name="business" value="anistouati74@gmail.com" />
-              <input type="hidden" name="amount" value="0.75" />
-              <input type="hidden" name="currency_code" value="EUR" />
-              <input type="hidden" name="item_name" value="Tunisia Sustainable Farm Project - €0.75 Donation" />
-              <Button 
-                type="submit"
-                size="lg" 
-                className="bg-secondary text-secondary-foreground hover:bg-secondary/90 text-lg px-10 py-7 shadow-elevated"
-              >
-                <Heart className="mr-2 h-6 w-6 fill-current" />
-                Donate €0.75
+                Donate Now
+                <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </form>
           </div>
@@ -75,8 +57,7 @@ const CallToAction = () => {
               Spread the Word
             </h3>
             <p className="text-primary-foreground/90 mb-6">
-              Can't donate right now? You can still help by sharing this campaign with your friends, 
-              family, and social networks. Every share brings us closer to our goal!
+              Help spread awareness about Bruce's story and support for his family. Share this campaign with your network.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Button 
@@ -88,26 +69,18 @@ const CallToAction = () => {
                 Share on Facebook
               </Button>
               <Button 
-                onClick={handleInstagramShare}
-                size="lg"
-                className="bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#F77737] hover:opacity-90 text-white border-0"
-              >
-                <Instagram className="mr-2 h-5 w-5" />
-                Share on Instagram
-              </Button>
-              <Button 
                 onClick={handleWhatsApp}
                 size="lg"
                 className="bg-[#25D366] hover:bg-[#25D366]/90 text-white border-0"
               >
                 <MessageCircle className="mr-2 h-5 w-5" />
-                Contact via WhatsApp
+                Share on WhatsApp
               </Button>
             </div>
           </div>
 
           <div className="mt-12 text-primary-foreground/80 text-sm">
-            <p>✓ Secure payment processing • ✓ Tax-deductible • ✓ 100% transparency</p>
+            <p>✓ Secure payment processing • ✓ 100% goes to the family • ✓ Direct support</p>
           </div>
         </div>
       </div>

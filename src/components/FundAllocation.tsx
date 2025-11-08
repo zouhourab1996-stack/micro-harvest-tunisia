@@ -1,28 +1,25 @@
 import { Progress } from "@/components/ui/progress";
-import farmElements from "@/assets/farm-elements.jpg";
+import familyImage from "@/assets/bruce-higgins-family.jpg";
 
 const FundAllocation = () => {
   const allocations = [
-    { category: "Artesian Well Drilling", amount: "€40,000", percentage: 27, description: "Deep water source for sustainable irrigation" },
-    { category: "Protective Fencing", amount: "€25,000", percentage: 17, description: "Secure 10 hectares of farmland" },
-    { category: "Poultry House Construction", amount: "€35,000", percentage: 23, description: "Modern chicken farming facilities" },
-    { category: "Livestock & Initial Feed", amount: "€30,000", percentage: 20, description: "Cows, sheep, and starting supplies" },
-    { category: "Fruit Trees & Planting", amount: "€15,000", percentage: 10, description: "Olive, almond, pomegranate, and fig trees" },
-    { category: "Operations & Maintenance", amount: "€5,000", percentage: 3, description: "First year operational costs" }
+    { category: "Immediate Family Expenses", amount: "$80,000", percentage: 40, description: "Housing, utilities, and daily living costs for Lori, Maddie, and Ryan" },
+    { category: "Education Support", amount: "$50,000", percentage: 25, description: "College funds and educational expenses for Maddie and Ryan" },
+    { category: "Medical & Final Expenses", amount: "$30,000", percentage: 15, description: "Outstanding medical bills and funeral costs" },
+    { category: "Future Security", amount: "$40,000", percentage: 20, description: "Emergency fund and long-term financial stability for the family" }
   ];
 
-  const totalAmount = "€150,000";
+  const totalAmount = "$200,000";
 
   return (
     <section id="funds" className="py-20 bg-gradient-to-b from-muted/30 to-background">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            How Your Donation Will Be Used
+            How Your Donation Helps
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Full transparency is our commitment. Here's exactly how every euro will be invested 
-            to build a sustainable farm that benefits the entire Kasserine community.
+            Supporting the Higgins family in their time of need
           </p>
         </div>
 
@@ -56,15 +53,14 @@ const FundAllocation = () => {
 
           <div className="order-1 lg:order-2">
             <img 
-              src={farmElements} 
-              alt="Farm development elements including well, fence, poultry house, livestock, and fruit trees"
+              src={familyImage} 
+              alt="Bruce Higgins with his family"
               className="rounded-2xl shadow-elevated w-full"
             />
             <div className="mt-6 bg-accent/10 rounded-lg p-6 border border-accent/20">
-              <h3 className="font-bold text-foreground mb-3 text-center">100% Transparency Guarantee</h3>
+              <h3 className="font-bold text-foreground mb-3 text-center">Direct Family Support</h3>
               <p className="text-sm text-muted-foreground text-center leading-relaxed">
-                Every expense will be documented and shared with our supporters. You'll receive regular updates 
-                on the project's progress, including photos, videos, and financial reports.
+                Every dollar donated goes directly to supporting Lori, Maddie, and Ryan Higgins. Your contribution helps ease the financial burden during this incredibly difficult time and ensures Bruce's family has the support they need for years to come.
               </p>
             </div>
           </div>

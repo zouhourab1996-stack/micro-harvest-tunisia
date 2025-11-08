@@ -1,26 +1,26 @@
-import { Sprout, Droplets, Shield, Home } from "lucide-react";
+import { Heart, Users, Trophy, Shield } from "lucide-react";
 
 const AboutProject = () => {
   const features = [
     {
-      icon: Droplets,
-      title: "Artesian Well",
-      description: "Drill a sustainable water source for irrigation and livestock"
-    },
-    {
       icon: Shield,
-      title: "Protective Fence",
-      description: "Secure the 10-hectare farmland for safe operations"
+      title: "Decorated Police Detective",
+      description: "Bruce served with distinction in the Boston Police Department Gang Unit, beloved by all who knew him"
     },
     {
-      icon: Home,
-      title: "Poultry House",
-      description: "Build modern facilities for chicken farming"
+      icon: Trophy,
+      title: "Gifted Athlete & Coach",
+      description: "Record-setting college basketball player who impacted countless children as a coach in multiple sports"
     },
     {
-      icon: Sprout,
-      title: "Fruit Trees & Livestock",
-      description: "Plant olive, almond, pomegranate, fig trees and raise cows and sheep"
+      icon: Heart,
+      title: "Devoted Family Man",
+      description: "A loving husband to Lori and father to Maddie and Ryan who fought cancer courageously for 6 years"
+    },
+    {
+      icon: Users,
+      title: "One of a Kind Friend",
+      description: "To know Bruce was to love him - the type of friend you only get once in a lifetime"
     }
   ];
 
@@ -29,12 +29,10 @@ const AboutProject = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Building a Sustainable Future in Kasserine
+            Remembering Bruce Higgins
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            This agricultural project aims to transform 10 hectares of land in Kasserine, Tunisia into a thriving, 
-            sustainable farm. With your support, we'll create jobs, provide fresh food, and demonstrate the power 
-            of community-driven development.
+            On November 2, 2025, we lost a cherished member of our community. Bruce Higgins lost a courageous 6-year battle with cancer that he fought silently and bravely. His sudden passing left his soulmate Lori and his two amazing children, Maddie and Ryan, to navigate this new reality without their incredible husband and father.
           </p>
         </div>
 
@@ -59,12 +57,10 @@ const AboutProject = () => {
 
         <div className="max-w-3xl mx-auto mt-16 bg-accent/10 rounded-xl p-8 border border-accent/20">
           <h3 className="text-2xl font-bold text-foreground mb-4 text-center">
-            Long-Term Impact
+            How You Can Help
           </h3>
           <p className="text-muted-foreground leading-relaxed text-center">
-            This project will provide sustainable income for local families, create employment opportunities, 
-            contribute to food security in the region, and serve as a model for agricultural development in Tunisia. 
-            Your micro-donation is an investment in the future of an entire community.
+            Since Bruce's passing, there has been an amazing outpouring of support and love for Lori, Maddie, and Ryan. Many have asked "what can we do to help?" While nothing will relieve their pain, your donation will show the love and appreciation we all have for a man who touched so many lives in a positive and impactful way in only 51 short years. Your contribution will help ease the financial burden the family now faces in Bruce's absence.
           </p>
         </div>
       </div>

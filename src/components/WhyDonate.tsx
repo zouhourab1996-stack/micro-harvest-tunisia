@@ -1,26 +1,26 @@
-import { Users, Heart, TrendingUp, Globe } from "lucide-react";
+import { Heart, HandHeart, Users, Shield } from "lucide-react";
 
 const WhyDonate = () => {
   const reasons = [
     {
-      icon: Users,
-      title: "Collective Power",
-      description: "200,000 people donating €0.50 = €100,000+ raised for meaningful change"
-    },
-    {
       icon: Heart,
-      title: "Accessible to Everyone",
-      description: "Everyone can afford €0.50. No donation is too small when we work together"
+      title: "Honor His Memory",
+      description: "Bruce touched countless lives through his service, coaching, and friendship"
     },
     {
-      icon: TrendingUp,
-      title: "Maximum Impact",
-      description: "Small contributions add up to create lasting economic opportunities"
+      icon: Users,
+      title: "Support His Family",
+      description: "Help Lori, Maddie, and Ryan navigate life without their rock and foundation"
     },
     {
-      icon: Globe,
-      title: "Global Community",
-      description: "Join supporters from around the world making a difference in rural Tunisia"
+      icon: HandHeart,
+      title: "Ease Financial Burden",
+      description: "Your donation helps cover expenses during this incredibly difficult time"
+    },
+    {
+      icon: Shield,
+      title: "Community Strength",
+      description: "Show the family they're not alone and that Bruce's legacy lives on"
     }
   ];
 
@@ -29,11 +29,10 @@ const WhyDonate = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Why Small Donations Matter
+            Why Your Support Matters
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            The power of micro-donations lies in their simplicity and accessibility. 
-            When thousands of people contribute just €0.50 or €0.75, we can achieve extraordinary things together.
+            Every donation honors Bruce's legacy and shows his family they are not alone
           </p>
         </div>
 
@@ -60,29 +59,18 @@ const WhyDonate = () => {
           <div className="bg-gradient-to-r from-primary/5 via-accent/5 to-secondary/5 rounded-2xl p-8 md:p-12">
             <div className="text-center mb-8">
               <h3 className="text-3xl font-bold text-foreground mb-4">
-                The Math is Simple
+                A Legacy of Love
               </h3>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-              <div className="bg-card rounded-lg p-6 shadow-soft">
-                <div className="text-4xl font-bold text-primary mb-2">€0.50</div>
-                <div className="text-sm text-muted-foreground">Your donation</div>
-              </div>
-              <div className="bg-card rounded-lg p-6 shadow-soft">
-                <div className="text-4xl font-bold text-accent mb-2">×200,000</div>
-                <div className="text-sm text-muted-foreground">Supporters</div>
-              </div>
-              <div className="bg-card rounded-lg p-6 shadow-soft">
-                <div className="text-4xl font-bold text-secondary mb-2">€100,000</div>
-                <div className="text-sm text-muted-foreground">Total raised</div>
-              </div>
+            <div className="text-center">
+              <p className="text-xl text-muted-foreground mb-6 italic">
+                "To know Bruce was to love him. He was truly a one of a kind person, and the type of friend you only get once in a lifetime."
+              </p>
+              <p className="text-lg text-muted-foreground">
+                God Bless you Bruce, you are already so missed and will forever be missed, but never forgotten. We will try our best to carry on your legacy and we will take care of Lori, Maddie, and Ryan.
+              </p>
             </div>
-
-            <p className="text-center text-muted-foreground mt-8 text-lg">
-              Your €0.50 might seem small, but together with thousands of others, it builds a sustainable farm, 
-              creates jobs, and transforms lives in Kasserine, Tunisia.
-            </p>
           </div>
         </div>
       </div>

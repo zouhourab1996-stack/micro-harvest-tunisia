@@ -28,7 +28,7 @@ const Footer = () => {
                     onClick={() => scrollToSection('about')} 
                     className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-left"
                   >
-                    About the Project
+                    Bruce's Story
                   </button>
                 </li>
                 <li>
@@ -36,7 +36,7 @@ const Footer = () => {
                     onClick={() => scrollToSection('funds')} 
                     className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-left"
                   >
-                    Fund Allocation
+                    How Donations Help
                   </button>
                 </li>
                 <li>

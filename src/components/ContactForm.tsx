@@ -23,12 +23,12 @@ const ContactForm = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Get in Touch
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              Have questions about the project? Want to partner with us? We'd love to hear from you.
-            </p>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            Get in Touch
+          </h2>
+          <p className="text-lg text-muted-foreground">
+            Questions about the fundraiser or want to share a memory of Bruce? We'd love to hear from you.
+          </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
