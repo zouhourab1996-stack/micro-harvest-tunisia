@@ -14,9 +14,9 @@ const Footer = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">Tunisia Farm Project</h3>
+              <h3 className="text-xl font-bold mb-4">Honor Bruce Higgins</h3>
               <p className="text-primary-foreground/80 text-sm leading-relaxed">
-                Building a sustainable agricultural future in Kasserine, Tunisia through the power of micro-donations.
+                Supporting Lori, Maddie, and Ryan as they navigate life without their beloved husband and father.
               </p>
             </div>
 
@@ -51,19 +51,19 @@ const Footer = () => {
             </div>
 
             <div>
-              <h3 className="text-xl font-bold mb-4">Our Mission</h3>
+              <h3 className="text-xl font-bold mb-4">Our Purpose</h3>
               <p className="text-primary-foreground/80 text-sm leading-relaxed">
-                To demonstrate that small donations from many people can create lasting positive change in rural communities.
+                To honor Bruce's legacy by showing his family that our community stands with them during this difficult time.
               </p>
             </div>
           </div>
 
           <div className="border-t border-primary-foreground/20 pt-8 text-center">
             <p className="text-primary-foreground/80 text-sm flex items-center justify-center gap-2">
-              Made with <Heart className="w-4 h-4 fill-current" /> for a sustainable future
+              Made with <Heart className="w-4 h-4 fill-current" /> in memory of Bruce Higgins
             </p>
             <p className="text-primary-foreground/60 text-xs mt-2">
-              © {new Date().getFullYear()} Tunisia Farm Project. All rights reserved.
+              © {new Date().getFullYear()} Bruce Higgins Memorial Fund. All rights reserved.
             </p>
           </div>
         </div>
