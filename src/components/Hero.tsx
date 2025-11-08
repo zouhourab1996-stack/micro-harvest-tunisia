@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 import heroImage from "@/assets/bruce-higgins-family.jpg";
 
 const Hero = () => {
-  const currentRaised = 187740;
+  const currentRaised = 5000;
   const targetAmount = 200000;
   const progressPercentage = (currentRaised / targetAmount) * 100;
 
@@ -46,19 +46,25 @@ const Hero = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <form action="https://www.paypal.com/donate" method="post" target="_blank">
+            <form action="https://www.paypal.com/donate" method="post" target="_blank" className="flex gap-3">
               <input type="hidden" name="business" value="anistouati74@gmail.com" />
               <input type="hidden" name="currency_code" value="USD" />
               <input type="hidden" name="item_name" value="Support for Bruce Higgins Family" />
-              <Button type="submit" size="lg" className="text-lg px-8 py-6 bg-gradient-to-r from-primary to-accent hover:opacity-90 transition-opacity shadow-elevated">
-                Donate Now
-                <ArrowRight className="ml-2 h-5 w-5" />
+              
+              <Button type="submit" name="amount" value="5" size="lg" className="text-lg px-6 py-6 bg-gradient-to-r from-primary to-accent hover:opacity-90 transition-opacity shadow-elevated">
+                Donate $5
+              </Button>
+              <Button type="submit" name="amount" value="10" size="lg" className="text-lg px-6 py-6 bg-gradient-to-r from-primary to-accent hover:opacity-90 transition-opacity shadow-elevated">
+                Donate $10
+              </Button>
+              <Button type="submit" size="lg" className="text-lg px-6 py-6 bg-gradient-to-r from-primary to-accent hover:opacity-90 transition-opacity shadow-elevated">
+                Custom Amount
               </Button>
             </form>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}>
-              Read Bruce's Story
-            </Button>
           </div>
+          <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary mt-4" onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}>
+            Read Bruce's Story
+          </Button>
         </div>
       </div>
     </section>

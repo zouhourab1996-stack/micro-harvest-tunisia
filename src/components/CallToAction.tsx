@@ -36,17 +36,36 @@ const CallToAction = () => {
             Your donation shows Lori, Maddie, and Ryan that they are not alone. Help us carry on Bruce's legacy and take care of the family he loved so deeply.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
-            <form action="https://www.paypal.com/donate" method="post" target="_blank">
+          <div className="flex flex-wrap gap-4 justify-center items-center mb-12">
+            <form action="https://www.paypal.com/donate" method="post" target="_blank" className="flex flex-wrap gap-4 justify-center">
               <input type="hidden" name="business" value="anistouati74@gmail.com" />
               <input type="hidden" name="currency_code" value="USD" />
               <input type="hidden" name="item_name" value="Support for Bruce Higgins Family" />
+              
+              <Button 
+                type="submit"
+                name="amount"
+                value="5"
+                size="lg" 
+                className="bg-card text-primary hover:bg-card/90 text-lg px-10 py-7 shadow-elevated border-2 border-primary-foreground/20"
+              >
+                Donate $5
+              </Button>
+              <Button 
+                type="submit"
+                name="amount"
+                value="10"
+                size="lg" 
+                className="bg-card text-primary hover:bg-card/90 text-lg px-10 py-7 shadow-elevated border-2 border-primary-foreground/20"
+              >
+                Donate $10
+              </Button>
               <Button 
                 type="submit"
                 size="lg" 
                 className="bg-card text-primary hover:bg-card/90 text-lg px-10 py-7 shadow-elevated border-2 border-primary-foreground/20"
               >
-                Donate Now
+                Custom Amount
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </form>
