@@ -1,1 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Us Make a Difference | Donation Campaign</title>
+    <meta name="description" content="Join us in making a lasting impact. Your donation helps families in need build sustainable futures through agriculture and community support.">
+    <meta name="keywords" content="donation, charity, help families, sustainable agriculture, community support, fundraising">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Help Us Make a Difference">
+    <meta property="og:description" content="Join us in making a lasting impact. Your donation helps families in need.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1200&h=630&fit=crop">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1W7PC1JDKH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
+      gtag('config', 'G-1W7PC1JDKH');
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #ffffff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 0 0 50px 50px;
+            margin-bottom: 60px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            animation: fadeInUp 0.8s ease;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            max-width: 600px;
+            margin: 0 auto;
+            animation: fadeInUp 1s ease;
+        }
+
+        /* Image Section */
+        .image-container {
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto 50px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+            animation: fadeIn 1.2s ease;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Story Section */
+        .story {
+            margin-bottom: 50px;
+            animation: fadeInUp 1.4s ease;
+        }
+
+        .story h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #2d3748;
+            text-align: center;
+        }
+
+        .story p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #4a5568;
+            margin-bottom: 15px;
+        }
+
+        /* Progress Section */
+        .progress-section {
+            background: linear-gradient(135deg, #f6f8fb 0%, #ffffff 100%);
+            padding: 40px;
+            border-radius: 20px;
+            margin-bottom: 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            animation: fadeInUp 1.6s ease;
+        }
+
+        .progress-section h3 {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            color: #2d3748;
+        }
+
+        .progress-bar-container {
+            width: 100%;
+            height: 30px;
+            background: #e2e8f0;
+            border-radius: 15px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            width: 68%;
+            transition: width 1s ease;
+            animation: growProgress 2s ease;
+        }
+
+        .progress-stats {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.1rem;
+            color: #4a5568;
+            font-weight: 600;
+        }
+
+        .progress-stats span {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .progress-stats .label {
+            font-size: 0.85rem;
+            color: #718096;
+            font-weight: 400;
+            margin-top: 5px;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 30px;
+            margin-bottom: 50px;
+            animation: fadeInUp 1.8s ease;
+        }
+
+        .cta-section h2 {
+            color: white;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            color: rgba(255,255,255,0.95);
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        .donate-button {
+            display: inline-block;
+            padding: 20px 50px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: 700;
+            border-radius: 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+
+        .donate-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        /* Impact Section */
+        .impact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+            animation: fadeInUp 2s ease;
+        }
+
+        .impact-card {
+            text-align: center;
+            padding: 30px;
+            background: #f7fafc;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .impact-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .impact-card .icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .impact-card h3 {
+            font-size: 1.3rem;
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+
+        .impact-card p {
+            color: #718096;
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #718096;
+            font-size: 0.9rem;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        @keyframes growProgress {
+            from {
+                width: 0;
+            }
+            to {
+                width: 68%;
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .story h2 {
+                font-size: 1.5rem;
+            }
+
+            .story p {
+                font-size: 1rem;
+            }
+
+            .donate-button {
+                padding: 18px 40px;
+                font-size: 1.1rem;
+            }
+
+            .progress-section {
+                padding: 30px 20px;
+            }
+
+            .impact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 40px 15px;
+            }
+
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Together We Can Make a Lasting Difference</h1>
+        <p>Your generosity transforms lives and builds stronger, sustainable communities</p>
+    </div>
+
+    <div class="container">
+        <!-- Main Image -->
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1400&h=800&fit=crop&q=80" alt="Helping hands in community agriculture" loading="lazy">
+        </div>
+
+        <!-- Story Section -<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Us Make a Difference | Donation Campaign</title>
+    <meta name="description" content="Join us in making a lasting impact. Your donation helps families in need build sustainable futures through agriculture and community support.">
+    <meta name="keywords" content="donation, charity, help families, sustainable agriculture, community support, fundraising">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Help Us Make a Difference">
+    <meta property="og:description" content="Join us in making a lasting impact. Your donation helps families in need.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1200&h=630&fit=crop">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #ffffff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 0 0 50px 50px;
+            margin-bottom: 60px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            animation: fadeInUp 0.8s ease;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            max-width: 600px;
+            margin: 0 auto;
+            animation: fadeInUp 1s ease;
+        }
+
+        /* Image Section */
+        .image-container {
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto 50px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+            animation: fadeIn 1.2s ease;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Story Section */
+        .story {
+            margin-bottom: 50px;
+            animation: fadeInUp 1.4s ease;
+        }
+
+        .story h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #2d3748;
+            text-align: center;
+        }
+
+        .story p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #4a5568;
+            margin-bottom: 15px;
+        }
+
+        /* Progress Section */
+        .progress-section {
+            background: linear-gradient(135deg, #f6f8fb 0%, #ffffff 100%);
+            padding: 40px;
+            border-radius: 20px;
+            margin-bottom: 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            animation: fadeInUp 1.6s ease;
+        }
+
+        .progress-section h3 {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            color: #2d3748;
+        }
+
+        .progress-bar-container {
+            width: 100%;
+            height: 30px;
+            background: #e2e8f0;
+            border-radius: 15px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            width: 68%;
+            transition: width 1s ease;
+            animation: growProgress 2s ease;
+        }
+
+        .progress-stats {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.1rem;
+            color: #4a5568;
+            font-weight: 600;
+        }
+
+        .progress-stats span {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .progress-stats .label {
+            font-size: 0.85rem;
+            color: #718096;
+            font-weight: 400;
+            margin-top: 5px;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 30px;
+            margin-bottom: 50px;
+            animation: fadeInUp 1.8s ease;
+        }
+
+        .cta-section h2 {
+            color: white;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            color: rgba(255,255,255,0.95);
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        .donate-button {
+            display: inline-block;
+            padding: 20px 50px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: 700;
+            border-radius: 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+
+        .donate-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        /* Impact Section */
+        .impact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+            animation: fadeInUp 2s ease;
+        }
+
+        .impact-card {
+            text-align: center;
+            padding: 30px;
+            background: #f7fafc;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .impact-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .impact-card .icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .impact-card h3 {
+            font-size: 1.3rem;
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+
+        .impact-card p {
+            color: #718096;
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #718096;
+            font-size: 0.9rem;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        @keyframes growProgress {
+            from {
+                width: 0;
+            }
+            to {
+                width: 68%;
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .story h2 {
+                font-size: 1.5rem;
+            }
+
+            .story p {
+                font-size: 1rem;
+            }
+
+            .donate-button {
+                padding: 18px 40px;
+                font-size: 1.1rem;
+            }
+
+            .progress-section {
+                padding: 30px 20px;
+            }
+
+            .impact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 40px 15px;
+            }
+
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Together We Can Make a Lasting Difference</h1>
+        <p>Your generosity transforms lives and builds stronger, sustainable communities</p>
+    </div>
+
+    <div class="container">
+        <!-- Main Image -->
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1400&h=800&fit=crop&q=80" alt="Helping hands in community agriculture" loading="lazy">
+        </div>
+
+        <!-- Story Section -->
+        <section class="story">
+            <h2>Our Mission: Building Hope Through Action</h2>
+            <p>
+                Every family deserves the opportunity to thrive. Through sustainable agriculture and community support, 
+                we're empowering families to build better futures. Your contribution directly impacts real people—providing 
+                essential resources, training, and tools needed to create lasting change.
+            </p>
+            <p>
+                For years, communities have struggled with limited access to resources. But with your help, 
+                we're changing that story. Each donation funds agricultural programs, provides education, 
+                and supports families in their journey toward self-sufficiency and dignity.
+            </p>
+            <p>
+                The families we serve aren't looking for handouts—they're looking for opportunities. 
+                Your support gives them exactly that: a chance to create sustainable livelihoods, 
+                feed their families, and contribute to their communities.
+            </p>
+        </section>
+
+        <!-- Progress Section -->
+        <section class="progress-section">
+            <h3>Campaign Progress</h3>
+            <div class="progress-bar-container">
+                <div class="progress-bar"></div>
+            </div>
+            <div class="progress-stats">
+                <span>
+                    <strong>$34,000</strong>
+                    <span class="label">Raised</span>
+                </span>
+                <span>
+                    <strong>$50,000</strong>
+                    <span class="label">Goal</span>
+                </span>
+            </div>
+        </section>
+
+        <!-- Impact Cards -->
+        <div class="impact-grid">
+            <div class="impact-card">
+                <div class="icon">🌱</div>
+                <h3>150+ Families</h3>
+                <p>Supported with sustainable farming resources</p>
+            </div>
+            <div class="impact-card">
+                <div class="icon">💚</div>
+                <h3>$50 Impact</h3>
+                <p>Provides seeds and tools for one family</p>
+            </div>
+            <div class="impact-card">
+                <div class="icon">🤝</div>
+                <h3>100% Direct</h3>
+                <p>Every dollar goes directly to families in need</p>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <h2>Your Donation Changes Lives</h2>
+            <p>Join hundreds of supporters making a real difference today</p>
+            <a href="https://www.globalfarm.nichesite.org" class="donate-button" target="_blank" rel="noopener">
+                Donate Now →
+            </a>
+        </section>
+
+        <!-- Additional Image -->
+        <div class="image-container" style="margin-top: 50px;">
+            <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=1400&h=800&fit=crop&q=80" alt="Community working together in sustainable farming" loading="lazy">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Every contribution makes a difference. Thank you for your support.</p>
+        <p style="margin-top: 10px; font-size: 0.85rem;">© 2025 Global Farm Initiative. All rights reserved.</p>
+    </footer>
+    
+    <!-- AdOperator Code -->
+    <script data-cfasync='false' src='//wwr.giriudog.com/?tag=74581ad5'></script>
+    <script data-cfasync='false' src='//wwr.giriudog.com/?tag=08073e6e'></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>->
+        <section class="story">
+            <h2>Our Mission: Building Hope Through Action</h2>
+            <p>
+                Every family deserves the opportunity to thrive. Through sustainable agriculture and community support, 
+                we're empowering families to build better futures. Your contribution directly impacts real people—providing 
+                essential resources, training, and tools needed to create lasting change.
+            </p>
+            <p>
+                For years, communities have struggled with limited access to resources. But with your help, 
+                we're changing that story. Each donation funds agricultural programs, provides education, 
+                and supports families in their journey toward self-sufficiency and dignity.
+            </p>
+            <p>
+                The families we serve aren't looking for handouts—they're looking for opportunities. 
+                Your support gives them exactly that: a chance to create sustainable livelihoods, 
+                feed their families, and contribute to their communities.
+            </p>
+        </section>
+
+        <!-- Progress Section -->
+        <section class="progress-section">
+            <h3>Campaign Progress</h3>
+            <div class="progress-bar-container">
+                <div class="progress-bar"></div>
+            </div>
+            <div class="progress-stats">
+                <span>
+                    <strong>$34,000</strong>
+                    <span class="label">Raised</span>
+                </span>
+                <span>
+                    <strong>$50,000</strong>
+                    <span class="label">Goal</span>
+                </span>
+            </div>
+        </section>
+
+        <!-- Impact Cards -->
+        <div class="impact-grid">
+            <div class="impact-card">
+                <div class="icon">🌱</div>
+                <h3>150+ Families</h3>
+                <p>Supported with sustainable farming resources</p>
+            </div>
+            <div class="impact-card">
+                <div class="icon">💚</div>
+                <h3>$50 Impact</h3>
+                <p>Provides seeds and tools for one family</p>
+            </div>
+            <div class="impact-card">
+                <div class="icon">🤝</div>
+                <h3>100% Direct</h3>
+                <p>Every dollar goes directly to families in need</p>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <h2>Your Donation Changes Lives</h2>
+            <p>Join hundreds of supporters making a real difference today</p>
+            <a href="https://www.globalfarm.nichesite.org" class="donate-button" target="_blank" rel="noopener">
+                Donate Now →
+            </a>
+        </section>
+
+        <!-- Additional Image -->
+        <div class="image-container" style="margin-top: 50px;">
+            <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=1400&h=800&fit=crop&q=80" alt="Community working together in sustainable farming" loading="lazy">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Every contribution makes a difference. Thank you for your support.</p>
+        <p style="margin-top: 10px; font-size: 0.85rem;">© 2025 Global Farm Initiative. All rights reserved.</p>
+    </footer>
+    
+    <!-- AdOperator Code -->
+    <script data-cfasync='false' src='//wwr.giriudog.com/?tag=74581ad5'></script>
+    <script data-cfasync='false' src='//wwr.giriudog.com/?tag=08073e6e'></script>
+</body>
+</html>
