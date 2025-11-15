@@ -3,6 +3,7 @@ import { Star, Clock, CheckCircle, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Testimonials from "@/components/Testimonials";
+import SEO from "@/components/SEO";
 
 const serviceDetails = {
   "divine-word-2025": {
@@ -84,6 +85,36 @@ const ServiceDetail = () => {
   const { serviceId } = useParams<{ serviceId: string }>();
   const service = serviceDetails[serviceId as keyof typeof serviceDetails];
 
+  const structuredData = service ? {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": service.title,
+    "name": service.title,
+    "description": service.fullDescription,
+    "provider": {
+      "@type": "Person",
+      "name": "John S",
+      "jobTitle": "Spiritual Advisor & Prophet"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": service.price.toString(),
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "url": `https://yoursite.com/service/${serviceId}`,
+      "priceValidUntil": "2025-12-31"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": service.rating.toString(),
+      "reviewCount": service.reviews.toString(),
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "image": service.image,
+    "areaServed": "Worldwide"
+  } : null;
+
   if (!service) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -99,6 +130,15 @@ const ServiceDetail = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title={`${service.title} | Spiritual Guidance & Prophetic Services`}
+        description={`${service.fullDescription} Starting at $${service.price}. ${service.rating} stars with ${service.reviews} reviews. Fast ${service.deliveryTime} delivery. Order now for divine guidance.`}
+        keywords={`${service.title}, prophetic word, spiritual guidance, divine direction, biblical wisdom, ${serviceId}, prophecy services, spiritual counseling, faith guidance`}
+        canonicalUrl={`https://yoursite.com/service/${serviceId}`}
+        ogImage={service.image}
+        ogType="product"
+        structuredData={structuredData}
+      />
       {/* Back Button */}
       <div className="bg-muted/30 py-4">
         <div className="container mx-auto px-4">

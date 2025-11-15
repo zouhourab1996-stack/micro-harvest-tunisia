@@ -1,5 +1,6 @@
 import ServiceCard from "@/components/ServiceCard";
 import Testimonials from "@/components/Testimonials";
+import SEO from "@/components/SEO";
 import { Sparkles, Heart, BookOpen, Star } from "lucide-react";
 
 const services = [
@@ -69,18 +70,109 @@ const features = [
 ];
 
 const Services = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Spiritual Guidance & Prophetic Words Services",
+    "description": "Professional spiritual guidance, prophetic words, and biblical counseling services. Receive divine direction and spiritual clarity for your life journey.",
+    "provider": {
+      "@type": "Person",
+      "name": "John S",
+      "jobTitle": "Spiritual Advisor & Prophet",
+      "description": "Experienced spiritual advisor with the gift of prophecy and biblical wisdom. Helping people find divine direction since 2015."
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "Worldwide"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "490",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Spiritual Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Divine Word for Your Life in 2025",
+            "description": "Personalized prophetic word for your 2025 journey"
+          },
+          "price": "20",
+          "priceCurrency": "USD"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Prophetic Blessings for 2025",
+            "description": "Transformative prayer with prophetic blessings"
+          },
+          "price": "20",
+          "priceCurrency": "USD"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Spiritual Biblical Word for Your Life",
+            "description": "Scripture-based spiritual guidance"
+          },
+          "price": "5",
+          "priceCurrency": "USD"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Prophetic Word for Your Life",
+            "description": "Comprehensive spiritual guidance and prophetic word"
+          },
+          "price": "30",
+          "priceCurrency": "USD"
+        }
+      ]
+    },
+    "offers": {
+      "@type": "AggregateOffer",
+      "priceCurrency": "USD",
+      "lowPrice": "5",
+      "highPrice": "30",
+      "offerCount": "4"
+    },
+    "url": "https://yoursite.com",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+216-93-816-607",
+      "contactType": "Customer Service",
+      "availableLanguage": ["English", "French", "Arabic"]
+    }
+  };
+
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Spiritual Guidance & Prophetic Words | Divine Direction for Your Life 2025"
+        description="Receive authentic prophetic words, spiritual guidance, and biblical wisdom. 5.0 rating with 490+ reviews. Experience divine direction and spiritual clarity. Fast delivery, personalized service, biblical foundation."
+        keywords="prophetic word 2025, spiritual guidance online, divine direction, biblical prophecy, prophetic blessings, spiritual counseling, Christian prophecy, faith guidance, spiritual advisor, divine word, spiritual reading, life purpose prophecy, biblical guidance, prayer services, prophetic ministry, spiritual gifts, divine calling, prophetic revelation"
+        canonicalUrl="https://yoursite.com/"
+        structuredData={structuredData}
+      />
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-primary via-primary/90 to-secondary">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6">
-              Spiritual Guidance & Prophetic Words
+              Professional Spiritual Guidance & Prophetic Words for 2025
             </h1>
             <p className="text-xl text-primary-foreground/90 mb-8">
-              Receive divine wisdom and spiritual direction for your life journey. 
-              Experience the power of prophecy and biblical guidance.
+              Get authentic divine wisdom and personalized spiritual direction for your life journey. 
+              Experience the transformative power of biblical prophecy and spiritual guidance from an experienced advisor with 490+ five-star reviews.
             </p>
             <div className="flex items-center justify-center gap-2 text-primary-foreground">
               <Star className="w-6 h-6 fill-accent text-accent" />
@@ -113,10 +205,10 @@ const Services = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Our Spiritual Services
+              Premium Spiritual Services & Prophetic Guidance
             </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Choose from our range of prophetic and spiritual guidance services
+            <p className="text-muted-foreground max-w-3xl mx-auto">
+              Choose from our range of spiritual services tailored to your needs. All services include personalized attention, biblical foundation, and fast delivery. Trusted by hundreds of clients worldwide seeking divine direction and spiritual clarity.
             </p>
           </div>
           
