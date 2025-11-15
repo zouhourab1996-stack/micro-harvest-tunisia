@@ -15,13 +15,14 @@ interface ServiceCardProps {
 
 const ServiceCard = ({ title, description, price, rating, reviews, image, link }: ServiceCardProps) => {
   return (
-    <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-      <div className="aspect-video overflow-hidden">
+    <Card className="overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] border-2 hover:border-primary/30">
+      <div className="aspect-video overflow-hidden relative group">
         <img 
           src={image} 
           alt={title}
-          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
         />
+        <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
       <div className="p-6">
         <h3 className="text-xl font-semibold text-foreground mb-2 line-clamp-2">{title}</h3>
