@@ -7,76 +7,76 @@ import SEO from "@/components/SEO";
 
 const serviceDetails = {
   "divine-word-2025": {
-    title: "Divine Word for Your Life in 2025",
-    description: "Receive a powerful prophetic word specifically tailored for your life in 2025",
-    fullDescription: "Experience divine guidance through a personalized prophetic word that addresses your specific life circumstances, challenges, and opportunities in 2025. This service includes spiritual insights, biblical references, and actionable guidance for your journey ahead.",
+    title: "Get Your Divine Word for 2025 – Unlock God's Plan & Breakthrough Now",
+    description: "MOST POPULAR! Receive a powerful, life-changing prophetic word revealing God's specific plan for your 2025",
+    fullDescription: "Experience transformative divine guidance with a personalized 1000+ word prophetic revelation designed exclusively for YOUR 2025 journey. This powerful service provides breakthrough insights into God's plan for your relationships, career advancement, divine purpose, spiritual gifts activation, and life-changing opportunities ahead. Includes comprehensive biblical references, actionable spiritual direction, and divine clarity that transforms confusion into confidence. Trusted by 151+ clients with perfect 5.0 rating.",
     price: 20,
     rating: 5.0,
     reviews: 151,
-    deliveryTime: "2 days",
+    deliveryTime: "24-48 hours",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1200&q=80",
     features: [
-      "Personalized prophetic word (1000+ words)",
-      "Biblical references and scriptural guidance",
-      "Insights about your 2025 journey",
-      "Spiritual direction and clarity",
-      "PDF delivery with beautiful formatting",
-      "Unlimited revisions until satisfied"
+      "Personalized 1000+ word prophetic revelation for YOUR life",
+      "Comprehensive biblical references & scriptural foundation",
+      "Divine insights about your 2025 journey & breakthrough opportunities",
+      "Clear spiritual direction for relationships, career & purpose",
+      "Professionally formatted PDF with beautiful design",
+      "Unlimited revisions until you experience complete satisfaction"
     ]
   },
   "prophetic-blessings-2025": {
-    title: "Prophetic Blessings for 2025",
-    description: "Experience transformative prayer with prophetic blessings for 2025",
-    fullDescription: "Receive powerful prophetic blessings through intercessory prayer that will cover your life, family, career, and spiritual journey throughout 2025. This service includes spoken blessings, written declarations, and spiritual protection.",
+    title: "Prophetic Blessings 2025 – Powerful Intercessory Prayer & Divine Protection",
+    description: "Experience transformative prophetic blessings through powerful intercessory prayer for 2025",
+    fullDescription: "Receive powerful prophetic blessings through dedicated intercessory prayer that covers every area of your life throughout 2025. This comprehensive service includes spoken blessings over your life, family protection, career success, spiritual journey advancement, and divine favor activation. You'll receive written blessing declarations, scripture-based affirmations, spiritual protection guidance, and optional audio recording of your personalized blessings. Perfect for those seeking divine coverage and breakthrough in the new year.",
     price: 20,
     rating: 5.0,
     reviews: 80,
-    deliveryTime: "2 days",
+    deliveryTime: "24-48 hours",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=1200&q=80",
     features: [
-      "Personalized prophetic blessings",
-      "Intercessory prayer for your life",
-      "Written blessing declarations",
-      "Scripture-based affirmations",
-      "Spiritual protection guidance",
-      "Audio recording of blessings (optional)"
+      "Personalized prophetic blessings spoken over your life",
+      "Powerful intercessory prayer for breakthrough & protection",
+      "Written blessing declarations you can speak daily",
+      "Scripture-based affirmations for faith activation",
+      "Comprehensive spiritual protection guidance",
+      "Optional audio recording of your prophetic blessings"
     ]
   },
   "biblical-word": {
-    title: "Spiritual Biblical Word for Your Life",
-    description: "Get personalized spiritual message rooted in biblical wisdom",
-    fullDescription: "Receive a spiritual word directly from scripture that speaks to your current life situation. This service provides biblical guidance, practical application, and spiritual encouragement rooted in God's Word.",
+    title: "Biblical Word for Your Life – Fast Scripture-Based Spiritual Guidance",
+    description: "BEST VALUE! Get personalized spiritual guidance rooted in biblical wisdom",
+    fullDescription: "Receive a powerful spiritual word directly from scripture that speaks directly to your current life situation and provides biblical guidance for your specific challenges. This affordable service delivers practical application of God's Word, spiritual encouragement, and divine wisdom rooted in scripture. Perfect for daily spiritual nourishment, decision-making guidance, and biblical perspective on your life circumstances. Express 24-hour delivery makes this ideal for urgent spiritual direction.",
     price: 5,
     rating: 5.0,
     reviews: 48,
-    deliveryTime: "1 day",
+    deliveryTime: "24 hours",
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=1200&q=80",
     features: [
-      "Scripture-based spiritual word",
-      "Biblical interpretation and application",
-      "Practical life guidance",
-      "Encouraging and uplifting message",
-      "Fast 24-hour delivery",
-      "Perfect for daily spiritual nourishment"
+      "Scripture-based spiritual word from God's Word",
+      "Biblical interpretation & practical life application",
+      "Actionable guidance for your specific situation",
+      "Encouraging & uplifting message rooted in truth",
+      "Lightning-fast 24-hour express delivery",
+      "Perfect for daily spiritual nourishment & quick answers"
     ]
   },
   "prophetic-word": {
-    title: "Prophetic Word for Your Life",
-    description: "Comprehensive spiritual guidance with detailed prophetic word",
-    fullDescription: "This premium service provides an in-depth prophetic word covering all areas of your life including relationships, career, purpose, spiritual gifts, and divine destiny. Receive comprehensive spiritual direction with detailed insights and practical guidance.",
+    title: "Premium Prophetic Word – Comprehensive Life Guidance & Divine Destiny Revelation",
+    description: "PREMIUM SERVICE! Receive the most comprehensive prophetic word covering ALL areas of your life",
+    fullDescription: "This premium service provides an in-depth 2000+ word prophetic revelation covering every major area of your life including relationships & marriage, career & finances, divine purpose & calling, spiritual gifts identification & activation, divine destiny revelation, and future direction & opportunities. This is our most thorough service offering comprehensive spiritual direction with detailed insights, practical guidance, priority support, and optional consultation. Perfect for those seeking complete clarity about their life path and divine assignment.",
     price: 30,
     rating: 5.0,
     reviews: 42,
-    deliveryTime: "3 days",
+    deliveryTime: "2-3 days",
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1200&q=80",
     features: [
-      "Comprehensive prophetic word (2000+ words)",
-      "Coverage of all life areas",
-      "Spiritual gifts identification",
-      "Divine purpose and calling revelation",
-      "Relationship and career guidance",
-      "Future insights and direction",
-      "Priority support and consultation"
+      "Comprehensive 2000+ word prophetic revelation",
+      "Complete coverage of ALL major life areas",
+      "Spiritual gifts identification & activation guidance",
+      "Divine purpose, calling & destiny revelation",
+      "Detailed relationship, career & financial guidance",
+      "Future insights, direction & breakthrough opportunities",
+      "Priority support with consultation available"
     ]
   }
 };
@@ -131,9 +131,9 @@ const ServiceDetail = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title={`${service.title} | Spiritual Guidance & Prophetic Services`}
-        description={`${service.fullDescription} Starting at $${service.price}. ${service.rating} stars with ${service.reviews} reviews. Fast ${service.deliveryTime} delivery. Order now for divine guidance.`}
-        keywords={`${service.title}, prophetic word, spiritual guidance, divine direction, biblical wisdom, ${serviceId}, prophecy services, spiritual counseling, faith guidance`}
+        title={`${service.title} | 490+ Reviews | Order Your Prophetic Word Now`}
+        description={`${service.fullDescription.substring(0, 155)}... Order now for $${service.price}. ${service.rating}★ rating with ${service.reviews}+ reviews. ${service.deliveryTime} delivery. WhatsApp: +216 93 816 607`}
+        keywords={`${service.title}, prophetic word ${serviceId}, ${serviceId} spiritual guidance, buy prophetic word online, order prophetic word 2025, divine direction service, biblical wisdom online, spiritual counseling ${serviceId}, prophecy services online, accurate prophetic reading, trusted spiritual advisor, get prophetic word now`}
         canonicalUrl={`https://yoursite.com/service/${serviceId}`}
         ogImage={service.image}
         ogType="product"
