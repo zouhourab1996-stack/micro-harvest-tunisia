@@ -1,0 +1,19 @@
+{
+  "name": "Spiritual Guidance & Prophetic Words",
+  "short_name": "Divine Guidance",
+  "description": "Professional spiritual guidance, prophetic words, and biblical wisdom for your life journey",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#4A6741",
+  "background_color": "#F7F4EF",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "categories": ["lifestyle", "religion", "spirituality"],
+  "lang": "en-US"
+}
