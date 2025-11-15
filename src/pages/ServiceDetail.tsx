@@ -1,0 +1,250 @@
+import { useParams, Link } from "react-router-dom";
+import { Star, Clock, CheckCircle, ArrowLeft } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import Testimonials from "@/components/Testimonials";
+
+const serviceDetails = {
+  "divine-word-2025": {
+    title: "Divine Word for Your Life in 2025",
+    description: "Receive a powerful prophetic word specifically tailored for your life in 2025",
+    fullDescription: "Experience divine guidance through a personalized prophetic word that addresses your specific life circumstances, challenges, and opportunities in 2025. This service includes spiritual insights, biblical references, and actionable guidance for your journey ahead.",
+    price: 20,
+    rating: 5.0,
+    reviews: 151,
+    deliveryTime: "2 days",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1200&q=80",
+    features: [
+      "Personalized prophetic word (1000+ words)",
+      "Biblical references and scriptural guidance",
+      "Insights about your 2025 journey",
+      "Spiritual direction and clarity",
+      "PDF delivery with beautiful formatting",
+      "Unlimited revisions until satisfied"
+    ]
+  },
+  "prophetic-blessings-2025": {
+    title: "Prophetic Blessings for 2025",
+    description: "Experience transformative prayer with prophetic blessings for 2025",
+    fullDescription: "Receive powerful prophetic blessings through intercessory prayer that will cover your life, family, career, and spiritual journey throughout 2025. This service includes spoken blessings, written declarations, and spiritual protection.",
+    price: 20,
+    rating: 5.0,
+    reviews: 80,
+    deliveryTime: "2 days",
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=1200&q=80",
+    features: [
+      "Personalized prophetic blessings",
+      "Intercessory prayer for your life",
+      "Written blessing declarations",
+      "Scripture-based affirmations",
+      "Spiritual protection guidance",
+      "Audio recording of blessings (optional)"
+    ]
+  },
+  "biblical-word": {
+    title: "Spiritual Biblical Word for Your Life",
+    description: "Get personalized spiritual message rooted in biblical wisdom",
+    fullDescription: "Receive a spiritual word directly from scripture that speaks to your current life situation. This service provides biblical guidance, practical application, and spiritual encouragement rooted in God's Word.",
+    price: 5,
+    rating: 5.0,
+    reviews: 48,
+    deliveryTime: "1 day",
+    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=1200&q=80",
+    features: [
+      "Scripture-based spiritual word",
+      "Biblical interpretation and application",
+      "Practical life guidance",
+      "Encouraging and uplifting message",
+      "Fast 24-hour delivery",
+      "Perfect for daily spiritual nourishment"
+    ]
+  },
+  "prophetic-word": {
+    title: "Prophetic Word for Your Life",
+    description: "Comprehensive spiritual guidance with detailed prophetic word",
+    fullDescription: "This premium service provides an in-depth prophetic word covering all areas of your life including relationships, career, purpose, spiritual gifts, and divine destiny. Receive comprehensive spiritual direction with detailed insights and practical guidance.",
+    price: 30,
+    rating: 5.0,
+    reviews: 42,
+    deliveryTime: "3 days",
+    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1200&q=80",
+    features: [
+      "Comprehensive prophetic word (2000+ words)",
+      "Coverage of all life areas",
+      "Spiritual gifts identification",
+      "Divine purpose and calling revelation",
+      "Relationship and career guidance",
+      "Future insights and direction",
+      "Priority support and consultation"
+    ]
+  }
+};
+
+const ServiceDetail = () => {
+  const { serviceId } = useParams<{ serviceId: string }>();
+  const service = serviceDetails[serviceId as keyof typeof serviceDetails];
+
+  if (!service) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <h2 className="text-2xl font-bold mb-4">Service not found</h2>
+          <Link to="/">
+            <Button>Back to Services</Button>
+          </Link>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="min-h-screen bg-background">
+      {/* Back Button */}
+      <div className="bg-muted/30 py-4">
+        <div className="container mx-auto px-4">
+          <Link to="/" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
+            <ArrowLeft className="w-4 h-4" />
+            Back to All Services
+          </Link>
+        </div>
+      </div>
+
+      {/* Service Header */}
+      <section className="py-12 bg-gradient-to-br from-primary/10 to-secondary/10">
+        <div className="container mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
+                {service.title}
+              </h1>
+              <p className="text-xl text-muted-foreground mb-6">
+                {service.fullDescription}
+              </p>
+              
+              <div className="flex items-center gap-6 mb-6">
+                <div className="flex items-center gap-2">
+                  <Star className="w-6 h-6 fill-accent text-accent" />
+                  <span className="text-2xl font-bold text-foreground">{service.rating}</span>
+                  <span className="text-muted-foreground">({service.reviews} reviews)</span>
+                </div>
+                <div className="flex items-center gap-2 text-muted-foreground">
+                  <Clock className="w-5 h-5" />
+                  <span>{service.deliveryTime} delivery</span>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <div>
+                  <span className="text-sm text-muted-foreground">Starting at</span>
+                  <p className="text-4xl font-bold text-primary">${service.price}</p>
+                </div>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                  <input type="hidden" name="cmd" value="_donations" />
+                  <input type="hidden" name="business" value="YOUR_PAYPAL_EMAIL@example.com" />
+                  <input type="hidden" name="item_name" value={service.title} />
+                  <input type="hidden" name="amount" value={service.price} />
+                  <input type="hidden" name="currency_code" value="USD" />
+                  <Button type="submit" size="lg" className="text-lg px-8">
+                    Order Now
+                  </Button>
+                </form>
+              </div>
+            </div>
+
+            <div className="relative">
+              <img 
+                src={service.image} 
+                alt={service.title}
+                className="rounded-lg shadow-2xl w-full"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What's Included */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <Card className="p-8">
+              <h2 className="text-3xl font-bold text-foreground mb-8">What's Included</h2>
+              <div className="grid md:grid-cols-2 gap-4">
+                {service.features.map((feature, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                    <span className="text-foreground">{feature}</span>
+                  </div>
+                ))}
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-foreground mb-12 text-center">How It Works</h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="text-center">
+                <div className="w-16 h-16 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                  1
+                </div>
+                <h3 className="text-xl font-semibold text-foreground mb-2">Place Your Order</h3>
+                <p className="text-muted-foreground">
+                  Select your service and complete the secure PayPal payment
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                  2
+                </div>
+                <h3 className="text-xl font-semibold text-foreground mb-2">Share Your Details</h3>
+                <p className="text-muted-foreground">
+                  Provide any relevant information about your situation or prayer requests
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                  3
+                </div>
+                <h3 className="text-xl font-semibold text-foreground mb-2">Receive Your Word</h3>
+                <p className="text-muted-foreground">
+                  Get your personalized prophetic word delivered within the promised timeframe
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <Testimonials />
+
+      {/* Final CTA */}
+      <section className="py-16 bg-gradient-to-br from-primary via-primary/90 to-secondary">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
+            Ready to Receive Your Spiritual Guidance?
+          </h2>
+          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
+            Join hundreds of satisfied clients who have experienced divine direction and prophetic clarity
+          </p>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" className="inline-block">
+            <input type="hidden" name="cmd" value="_donations" />
+            <input type="hidden" name="business" value="YOUR_PAYPAL_EMAIL@example.com" />
+            <input type="hidden" name="item_name" value={service.title} />
+            <input type="hidden" name="amount" value={service.price} />
+            <input type="hidden" name="currency_code" value="USD" />
+            <Button type="submit" size="lg" variant="secondary" className="text-lg px-12">
+              Order Now for ${service.price}
+            </Button>
+          </form>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default ServiceDetail;
