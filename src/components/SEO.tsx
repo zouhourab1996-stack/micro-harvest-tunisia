@@ -7,7 +7,7 @@ interface SEOProps {
   canonicalUrl: string;
   ogImage?: string;
   ogType?: string;
-  structuredData?: object;
+  structuredData?: object | object[];
 }
 
 const SEO = ({
@@ -65,13 +65,19 @@ const SEO = ({
 
     // Structured Data (JSON-LD)
     if (structuredData) {
-      let script = document.querySelector('script[type="application/ld+json"]');
-      if (!script) {
-        script = document.createElement('script');
+      // Remove existing structured data scripts
+      const existingScripts = document.querySelectorAll('script[type="application/ld+json"]');
+      existingScripts.forEach(script => script.remove());
+
+      // Handle both single objects and arrays of structured data
+      const dataArray = Array.isArray(structuredData) ? structuredData : [structuredData];
+      
+      dataArray.forEach((data, index) => {
+        const script = document.createElement('script');
         script.setAttribute('type', 'application/ld+json');
+        script.textContent = JSON.stringify(data);
         document.head.appendChild(script);
-      }
-      script.textContent = JSON.stringify(structuredData);
+      });
     }
 
     // Cleanup function
