@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom";
 import ServiceCard from "@/components/ServiceCard";
 import Testimonials from "@/components/Testimonials";
 import SEO from "@/components/SEO";
 import { Sparkles, Heart, BookOpen, Star } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const services = [
   {
@@ -218,6 +220,32 @@ const Services = () => {
         canonicalUrl="https://yoursite.com/"
         structuredData={[structuredData, faqStructuredData]}
       />
+      
+      {/* Header Navigation */}
+      <header className="border-b bg-card/50 backdrop-blur-sm sticky top-0 z-50">
+        <div className="container mx-auto px-4 py-4">
+          <nav className="flex justify-between items-center">
+            <Link to="/" className="text-2xl font-bold text-primary hover:text-primary/90 transition-colors">
+              Divine Guidance
+            </Link>
+            <div className="flex gap-4">
+              <Link to="/blog">
+                <Button variant="ghost">Blog</Button>
+              </Link>
+              <Link to="/about">
+                <Button variant="ghost">About</Button>
+              </Link>
+              <Link to="/testimonials">
+                <Button variant="ghost">Testimonials</Button>
+              </Link>
+              <Link to="/contact">
+                <Button variant="outline">Contact</Button>
+              </Link>
+            </div>
+          </nav>
+        </div>
+      </header>
+
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-primary via-primary/90 to-secondary">
         <div className="container mx-auto px-4 text-center">
