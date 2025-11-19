@@ -25,9 +25,9 @@ const About = () => {
   return (
     <>
       <SEO
-        title="About Us | Experienced Prophetic Ministry & Spiritual Guidance Since 2015"
-        description="Meet John S, a trusted spiritual advisor and prophet with 10+ years of experience in prophetic ministry. Serving 490+ clients worldwide with accurate prophetic words and divine guidance."
-        keywords="about prophetic ministry, spiritual advisor biography, experienced prophet, prophetic ministry background, trusted spiritual counselor"
+        title="About Us | Experienced Prophetic Word Ministry & Spiritual Guidance Since 2015"
+        description="Meet John S, a trusted spiritual advisor specializing in prophetic words. 10+ years delivering accurate prophetic word services to 490+ clients worldwide. Learn what is a prophetic word and how to receive your prophetic word."
+        keywords="about prophetic word ministry, prophetic word advisor, what is a prophetic word, experienced prophet, prophetic word services, trusted spiritual counselor, receive prophetic word"
         canonicalUrl={currentUrl}
         structuredData={structuredData}
       />
@@ -40,10 +40,10 @@ const About = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 text-foreground">
-                About Our Prophetic Ministry
+                About Our Prophetic Word Ministry
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 md:mb-8">
-                Helping believers worldwide discover their divine purpose and walk in spiritual clarity since 2015
+                Delivering accurate prophetic words to believers worldwide since 2015. Discover what a prophetic word can reveal about your divine purpose and spiritual destiny.
               </p>
             </div>
           </div>
@@ -55,13 +55,13 @@ const About = () => {
             <div className="max-w-4xl mx-auto space-y-8 md:space-y-12">
               {/* Our Story */}
               <div>
-                <h2 className="text-3xl font-bold mb-6">Our Story & Mission</h2>
+                <h2 className="text-3xl font-bold mb-6">Our Prophetic Word Ministry Story & Mission</h2>
                 <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
                   <p>
-                    Divine Spiritual Guidance Services was founded in 2015 with a simple but powerful mission: to help believers hear from God clearly and walk confidently in their divine purpose. What started as a personal calling has grown into a worldwide ministry serving hundreds of clients across continents.
+                    Our prophetic word ministry was founded in 2015 with a simple but powerful mission: to help believers receive accurate prophetic words that reveal God's plan clearly. What is a prophetic word? It's divine revelation that helps you hear from God and walk confidently in your divine purpose. What started as a personal calling has grown into a worldwide prophetic word ministry serving hundreds of clients across continents.
                   </p>
                   <p>
-                    Led by John S, an experienced spiritual advisor with the authentic gift of prophecy, our ministry has helped over 490 people receive life-changing prophetic words, breakthrough blessings, and biblical guidance that transformed their spiritual journeys.
+                    Led by John S, an experienced spiritual advisor with the authentic gift of prophecy, our ministry has helped over 490 people receive life-changing prophetic words, breakthrough blessings, and biblical guidance. Each prophetic word we deliver is personalized, accurate, and rooted in scripture.
                   </p>
                   <p>
                     We believe that every person has a unique calling and destiny designed by God. Our mission is to help you discover that calling, understand your spiritual gifts, and receive the divine direction you need to fulfill your purpose with confidence and clarity.
