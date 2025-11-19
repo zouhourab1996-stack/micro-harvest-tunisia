@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
 import SEO from "@/components/SEO";
+import Header from "@/components/Header";
 
 const blogPosts = [
   {
@@ -98,30 +99,7 @@ const Blog = () => {
       />
 
       <div className="min-h-screen bg-background">
-        {/* Header */}
-        <header className="border-b bg-card/50 backdrop-blur-sm sticky top-0 z-50">
-          <div className="container mx-auto px-4 py-4">
-            <nav className="flex justify-between items-center">
-              <Link to="/" className="text-2xl font-bold text-primary hover:text-primary/90 transition-colors">
-                Divine Guidance
-              </Link>
-              <div className="flex gap-4">
-                <Link to="/">
-                  <Button variant="ghost">Home</Button>
-                </Link>
-                <Link to="/about">
-                  <Button variant="ghost">About</Button>
-                </Link>
-                <Link to="/testimonials">
-                  <Button variant="ghost">Testimonials</Button>
-                </Link>
-                <Link to="/contact">
-                  <Button variant="outline">Contact</Button>
-                </Link>
-              </div>
-            </nav>
-          </div>
-        </header>
+        <Header />
 
         {/* Hero Section */}
         <section className="py-20 bg-gradient-to-b from-primary/5 to-background">

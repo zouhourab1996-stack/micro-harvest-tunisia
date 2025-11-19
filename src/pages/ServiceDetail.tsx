@@ -5,6 +5,7 @@ import { Card } from "@/components/ui/card";
 import Testimonials from "@/components/Testimonials";
 import SEO from "@/components/SEO";
 import SocialShare from "@/components/SocialShare";
+import Header from "@/components/Header";
 
 const serviceDetails = {
   "divine-word-2025": {
@@ -131,23 +132,7 @@ const ServiceDetail = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Header Navigation */}
-      <header className="border-b bg-card/50 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
-          <nav className="flex justify-between items-center">
-            <Link to="/" className="text-2xl font-bold text-primary hover:text-primary/90 transition-colors">
-              Divine Guidance
-            </Link>
-            <div className="flex gap-4">
-              <Link to="/"><Button variant="ghost">Home</Button></Link>
-              <Link to="/blog"><Button variant="ghost">Blog</Button></Link>
-              <Link to="/about"><Button variant="ghost">About</Button></Link>
-              <Link to="/testimonials"><Button variant="ghost">Testimonials</Button></Link>
-              <Link to="/contact"><Button variant="outline">Contact</Button></Link>
-            </div>
-          </nav>
-        </div>
-      </header>
+      <Header />
       
       <SEO
         title={`${service.title} | 490+ Reviews | Order Your Prophetic Word Now`}
@@ -169,41 +154,42 @@ const ServiceDetail = () => {
       </div>
 
       {/* Service Header */}
-      <section className="py-12 bg-gradient-to-br from-primary/10 to-secondary/10">
+      <section className="py-8 md:py-12 bg-gradient-to-br from-primary/10 to-secondary/10">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-6 md:gap-12 items-center">
             <div>
-              <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
+              <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-foreground mb-3 md:mb-4">
                 {service.title}
               </h1>
-              <p className="text-xl text-muted-foreground mb-6">
+              <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-4 md:mb-6">
                 {service.fullDescription}
               </p>
               
-              <div className="flex items-center gap-6 mb-6">
+              <div className="flex flex-wrap items-center gap-3 md:gap-6 mb-4 md:mb-6 text-sm md:text-base">
                 <div className="flex items-center gap-2">
-                  <Star className="w-6 h-6 fill-accent text-accent" />
-                  <span className="text-2xl font-bold text-foreground">{service.rating}</span>
-                  <span className="text-muted-foreground">({service.reviews} reviews)</span>
+                  <Star className="w-5 h-5 md:w-6 md:h-6 fill-accent text-accent" />
+                  <span className="text-xl md:text-2xl font-bold text-foreground">{service.rating}</span>
+                  <span className="text-muted-foreground">({service.reviews})</span>
                 </div>
                 <div className="flex items-center gap-2 text-muted-foreground">
-                  <Clock className="w-5 h-5" />
-                  <span>{service.deliveryTime} delivery</span>
+                  <Clock className="w-4 h-4 md:w-5 md:h-5" />
+                  <span>{service.deliveryTime}</span>
                 </div>
               </div>
 
-              <div className="flex flex-col gap-6">
-                <div className="flex items-center gap-4">
+              <div className="flex flex-col gap-4 md:gap-6">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
                   <div>
-                    <span className="text-sm text-muted-foreground">Starting at</span>
-                    <p className="text-4xl font-bold text-primary">${service.price}</p>
+                    <span className="text-xs md:text-sm text-muted-foreground">Starting at</span>
+                    <p className="text-3xl md:text-4xl font-bold text-primary">${service.price}</p>
                   </div>
                   <a 
                     href={`https://wa.me/21693816607?text=Hello%2C%20I%20want%20to%20order%3A%20${encodeURIComponent(service.title)}%20-%20Price%3A%20%24${service.price}`}
                     target="_blank" 
                     rel="noopener noreferrer"
+                    className="w-full sm:w-auto"
                   >
-                    <Button size="lg" className="text-lg px-8 bg-gradient-to-r from-primary to-secondary hover:shadow-lg transform hover:scale-105 transition-all gap-2">
+                    <Button size="lg" className="w-full text-base md:text-lg px-6 md:px-8 bg-gradient-to-r from-primary to-secondary hover:shadow-lg transition-all gap-2">
                       <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
                       </svg>
@@ -212,17 +198,16 @@ const ServiceDetail = () => {
                   </a>
                 </div>
                 
-                <div className="bg-accent/10 border-l-4 border-accent p-4 rounded-r-lg">
-                  <p className="text-sm font-semibold text-foreground mb-2">📱 How to Order:</p>
-                  <p className="text-sm text-muted-foreground mb-2">
-                    1. Click the "Order via WhatsApp" button above<br/>
-                    2. You'll be redirected to WhatsApp with pre-filled message<br/>
-                    3. Confirm your order and provide any additional details<br/>
-                    4. Our team will guide you through the payment process<br/>
-                    5. Receive your spiritual guidance within {service.deliveryTime}
+                <div className="bg-accent/10 border-l-4 border-accent p-3 md:p-4 rounded-r-lg">
+                  <p className="text-xs md:text-sm font-semibold text-foreground mb-2">📱 How to Order:</p>
+                  <p className="text-xs md:text-sm text-muted-foreground mb-2">
+                    1. Click "Order via WhatsApp"<br/>
+                    2. Confirm your order in WhatsApp<br/>
+                    3. Complete payment process<br/>
+                    4. Receive guidance in {service.deliveryTime}
                   </p>
-                  <p className="text-xs text-muted-foreground mt-3">
-                    💬 WhatsApp: <a href="https://wa.me/21693816607" target="_blank" rel="noopener noreferrer" className="font-bold text-primary hover:underline">+216 93 816 607</a>
+                  <p className="text-xs text-muted-foreground mt-2">
+                    💬 <a href="https://wa.me/21693816607" target="_blank" rel="noopener noreferrer" className="font-bold text-primary hover:underline">+216 93 816 607</a>
                   </p>
                 </div>
               </div>

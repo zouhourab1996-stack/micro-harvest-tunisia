@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, Calendar, Clock, CheckCircle2 } from "lucide-react";
 import SEO from "@/components/SEO";
 import SocialShare from "@/components/SocialShare";
+import Header from "@/components/Header";
 import { Card } from "@/components/ui/card";
 
 const blogContent: Record<string, any> = {
