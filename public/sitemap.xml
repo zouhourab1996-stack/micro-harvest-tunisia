@@ -2,89 +2,143 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   
+  <!-- IMPORTANT: Replace 'yoursite.com' with your actual GitHub Pages domain -->
+  <!-- Example: https://yourusername.github.io/repository-name -->
+  
   <!-- Homepage -->
   <url>
     <loc>https://yoursite.com/</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   
-  <!-- Blog Pages -->
+  <!-- Services Page -->
+  <url>
+    <loc>https://yoursite.com/#/services</loc>
+    <lastmod>2025-01-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Blog Main Page -->
   <url>
     <loc>https://yoursite.com/#/blog</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2025-01-19</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   
+  <!-- About Page -->
   <url>
     <loc>https://yoursite.com/#/about</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
+  <!-- Testimonials Page -->
   <url>
     <loc>https://yoursite.com/#/testimonials</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
+  <!-- Contact Page -->
   <url>
     <loc>https://yoursite.com/#/contact</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
-  <!-- Divine Word for 2025 Service -->
+  <!-- Service Detail Pages -->
   <url>
-    <loc>https://yoursite.com/service/divine-word-2025</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://yoursite.com/#/service/divine-word-2025</loc>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
     <image:image>
       <image:loc>https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
       <image:title>Divine Word for Your Life in 2025 - Prophetic Guidance</image:title>
     </image:image>
   </url>
   
-  <!-- Prophetic Blessings Service -->
   <url>
-    <loc>https://yoursite.com/service/prophetic-blessings-2025</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://yoursite.com/#/service/prophetic-blessings-2025</loc>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
     <image:image>
       <image:loc>https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
       <image:title>Prophetic Blessings for 2025 - Spiritual Prayer Services</image:title>
     </image:image>
   </url>
   
-  <!-- Biblical Word Service -->
   <url>
-    <loc>https://yoursite.com/service/biblical-word</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://yoursite.com/#/service/biblical-word</loc>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
     <image:image>
       <image:loc>https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
       <image:title>Spiritual Biblical Word - Divine Guidance from Scripture</image:title>
     </image:image>
   </url>
   
-  <!-- Prophetic Word Service -->
   <url>
-    <loc>https://yoursite.com/service/prophetic-word</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://yoursite.com/#/service/prophetic-word</loc>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
     <image:image>
       <image:loc>https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
       <image:title>Comprehensive Prophetic Word - Complete Spiritual Guidance</image:title>
     </image:image>
+  </url>
+  
+  <!-- Blog Post Pages -->
+  <url>
+    <loc>https://yoursite.com/#/blog/prophetic-word-meaning</loc>
+    <lastmod>2025-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  
+  <url>
+    <loc>https://yoursite.com/#/blog/biblical-prophecy-guide</loc>
+    <lastmod>2025-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  
+  <url>
+    <loc>https://yoursite.com/#/blog/spiritual-guidance-2025</loc>
+    <lastmod>2025-01-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  
+  <url>
+    <loc>https://yoursite.com/#/blog/dream-interpretation-biblical</loc>
+    <lastmod>2025-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  
+  <url>
+    <loc>https://yoursite.com/#/blog/prophetic-blessings-guide</loc>
+    <lastmod>2025-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  
+  <url>
+    <loc>https://yoursite.com/#/blog/divine-direction-finding</loc>
+    <lastmod>2025-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
   
 </urlset>

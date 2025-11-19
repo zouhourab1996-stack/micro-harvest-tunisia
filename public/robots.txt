@@ -54,5 +54,9 @@ Disallow: /
 User-agent: Google-Extended
 Disallow: /
 
-# Sitemap
+# Sitemap Location - IMPORTANT: Update with your actual domain
 Sitemap: https://yoursite.com/sitemap.xml
+
+# Additional Indexing Instructions
+# Maximum crawling for all major search engines
+# This tells search engines to crawl every page thoroughly
