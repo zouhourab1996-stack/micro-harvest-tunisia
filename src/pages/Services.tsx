@@ -217,10 +217,10 @@ const Services = () => {
   return (
       <div className="min-h-screen">
       <SEO
-        title="Prophetic Word 2025 | #1 Spiritual Guidance & Divine Direction Online"
-        description="Get your prophetic word for 2025 now! 490+ 5-star reviews. Expert spiritual guidance reveals your divine purpose, breakthrough answers & biblical wisdom. Fast 24-48hr delivery. Order today!"
-        keywords="prophetic word 2025, get prophetic word online, spiritual guidance services, divine direction 2025, biblical prophecy today, prophetic blessings online, accurate spiritual counseling, Christian prophecy services, best prophetic word, spiritual advisor online, divine word for my life, prophetic reading 2025, life purpose prophecy, biblical guidance online, prophetic prayer services, prophetic ministry 2025, spiritual breakthrough, divine calling revelation, accurate prophetic word, trusted spiritual mentor"
-        canonicalUrl="https://yoursite.com/"
+        title="Prophetic Word 2025 | Get Your Prophetic Word Online - 490+ 5-Star Reviews"
+        description="Get your prophetic word for 2025! Receive an accurate prophetic word from experienced spiritual advisor. 490+ 5-star reviews. What is a prophetic word? Discover divine direction, breakthrough answers & biblical wisdom. Fast 24-48hr delivery."
+        keywords="prophetic word, get prophetic word, what is a prophetic word, prophetic word 2025, prophetic word online, prophetic word for your life, prophetic word meaning, prophetic word today, receive prophetic word, accurate prophetic word, spiritual guidance, divine direction, biblical prophecy, prophetic blessings"
+        canonicalUrl="https://www.globalfarm.nichesite.org/"
         structuredData={[structuredData, faqStructuredData]}
       />
       
@@ -231,10 +231,10 @@ const Services = () => {
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-primary-foreground mb-4 md:mb-6 leading-tight">
-              Get Your Prophetic Word for 2025 – Unlock Divine Direction & Spiritual Breakthrough Now
+              Get Your <span className="underline decoration-accent">Prophetic Word</span> for 2025 – Unlock Divine Direction Now
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-primary-foreground/90 mb-6 md:mb-8">
-              Discover your divine purpose with a personalized prophetic word from a trusted spiritual advisor. 490+ five-star reviews prove our accuracy. Receive biblical wisdom, breakthrough answers, and clear spiritual guidance for your life, relationships, career, and calling. Fast 24-48 hour delivery. Your spiritual breakthrough starts here!
+              What is a prophetic word? It's divine revelation revealing God's plan for your life. Get your personalized <strong>prophetic word online</strong> from an experienced spiritual advisor. 490+ five-star reviews prove accuracy. Receive biblical wisdom, breakthrough answers, and clear spiritual guidance. Fast 24-48 hour delivery!
             </p>
             <div className="flex items-center justify-center gap-2 text-primary-foreground">
               <Star className="w-5 h-5 md:w-6 md:h-6 fill-accent text-accent" />
@@ -267,10 +267,10 @@ const Services = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Choose Your Prophetic Word Service – From $5 to Premium Guidance
+              Choose Your Prophetic Word Service – Get Your Prophetic Word Today
             </h2>
             <p className="text-muted-foreground max-w-3xl mx-auto">
-              Select the perfect spiritual guidance service for your needs. All services feature 100% personalized prophetic words, biblical foundation, and lightning-fast delivery. Join 490+ satisfied clients worldwide who've experienced breakthrough, divine clarity, and life transformation through our accurate spiritual guidance.
+              Select the <strong>prophetic word</strong> service for your needs. All <strong>prophetic word</strong> services feature 100% personalized messages, biblical foundation, and lightning-fast delivery. Join 490+ satisfied clients worldwide who've received accurate <strong>prophetic words</strong> and experienced breakthrough, divine clarity, and life transformation.
             </p>
           </div>
           
@@ -289,17 +289,17 @@ const Services = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-foreground mb-6">Meet John S. – Your Trusted Prophetic Guide Since 2015</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-6">Meet John S. – Your Prophetic Word Advisor Since 2015</h2>
             <div className="flex items-center justify-center gap-2 mb-6">
               <span className="px-4 py-2 bg-primary/10 rounded-full text-primary font-semibold">
-                ⭐ Master Prophet & Spiritual Advisor
+                ⭐ Prophetic Word Specialist & Spiritual Advisor
               </span>
               <span className="px-4 py-2 bg-accent/10 rounded-full text-accent-foreground font-semibold">
                 ⚡ Response Time: &lt;1 Hour
               </span>
             </div>
             <p className="text-foreground leading-relaxed mb-6 text-lg">
-              With over 8 years of prophetic ministry and 490+ five-star reviews, John S. is a gifted spiritual advisor with the divine gift of vision and prophecy. Specializing in accurate prophetic words that bring breakthrough, clarity, and divine direction, John has helped thousands discover their God-given purpose, navigate life's challenges, and step into their spiritual destiny.
+              With over 8 years delivering <strong>prophetic words</strong> and 490+ five-star reviews, John S. is a gifted spiritual advisor with the divine gift of prophecy. Specializing in accurate <strong>prophetic words</strong> that bring breakthrough, clarity, and divine direction, John has helped thousands receive their <strong>prophetic word</strong> and discover their God-given purpose, navigate life's challenges, and step into their spiritual destiny.
             </p>
             <p className="text-foreground leading-relaxed mb-6">
               <strong>Why Choose John S.?</strong><br/>
@@ -322,7 +322,7 @@ const Services = () => {
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-foreground mb-12 text-center">Frequently Asked Questions About Prophetic Words</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-12 text-center">Prophetic Word FAQ - What Is a Prophetic Word?</h2>
             
             <div className="space-y-6">
               <div className="bg-background p-6 rounded-lg border border-border">
