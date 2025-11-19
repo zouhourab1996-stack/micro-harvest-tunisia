@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
-import ServiceCard from "@/components/ServiceCard";
-import Testimonials from "@/components/Testimonials";
-import SEO from "@/components/SEO";
-import { Sparkles, Heart, BookOpen, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ServiceCard from "@/components/ServiceCard";
+import SEO from "@/components/SEO";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Sparkles, Heart, BookOpen, Star } from "lucide-react";
+import Testimonials from "@/components/Testimonials";
+import Header from "@/components/Header";
+import heroFarm from "@/assets/hero-farm.jpg";
 
 const services = [
   {
@@ -212,7 +215,7 @@ const Services = () => {
   };
 
   return (
-    <div className="min-h-screen">
+      <div className="min-h-screen">
       <SEO
         title="Prophetic Word 2025 | #1 Spiritual Guidance & Divine Direction Online"
         description="Get your prophetic word for 2025 now! 490+ 5-star reviews. Expert spiritual guidance reveals your divine purpose, breakthrough answers & biblical wisdom. Fast 24-48hr delivery. Order today!"
@@ -221,61 +224,38 @@ const Services = () => {
         structuredData={[structuredData, faqStructuredData]}
       />
       
-      {/* Header Navigation */}
-      <header className="border-b bg-card/50 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
-          <nav className="flex justify-between items-center">
-            <Link to="/" className="text-2xl font-bold text-primary hover:text-primary/90 transition-colors">
-              Divine Guidance
-            </Link>
-            <div className="flex gap-4">
-              <Link to="/blog">
-                <Button variant="ghost">Blog</Button>
-              </Link>
-              <Link to="/about">
-                <Button variant="ghost">About</Button>
-              </Link>
-              <Link to="/testimonials">
-                <Button variant="ghost">Testimonials</Button>
-              </Link>
-              <Link to="/contact">
-                <Button variant="outline">Contact</Button>
-              </Link>
-            </div>
-          </nav>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-primary via-primary/90 to-secondary">
+      <section className="relative py-12 md:py-20 bg-gradient-to-br from-primary via-primary/90 to-secondary">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-primary-foreground mb-4 md:mb-6 leading-tight">
               Get Your Prophetic Word for 2025 – Unlock Divine Direction & Spiritual Breakthrough Now
             </h1>
-            <p className="text-xl text-primary-foreground/90 mb-8">
+            <p className="text-base sm:text-lg md:text-xl text-primary-foreground/90 mb-6 md:mb-8">
               Discover your divine purpose with a personalized prophetic word from a trusted spiritual advisor. 490+ five-star reviews prove our accuracy. Receive biblical wisdom, breakthrough answers, and clear spiritual guidance for your life, relationships, career, and calling. Fast 24-48 hour delivery. Your spiritual breakthrough starts here!
             </p>
             <div className="flex items-center justify-center gap-2 text-primary-foreground">
-              <Star className="w-6 h-6 fill-accent text-accent" />
-              <span className="text-2xl font-bold">5.0</span>
-              <span className="text-lg">(490 Reviews)</span>
+              <Star className="w-5 h-5 md:w-6 md:h-6 fill-accent text-accent" />
+              <span className="text-xl md:text-2xl font-bold">5.0</span>
+              <span className="text-base md:text-lg">(490 Reviews)</span>
             </div>
           </div>
         </div>
       </section>
 
       {/* Features */}
-      <section className="py-12 bg-background">
+      <section className="py-8 md:py-12 bg-background">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
             {features.map((feature, index) => (
               <div key={index} className="text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-4">
-                  <feature.icon className="w-8 h-8 text-primary" />
+                <div className="inline-flex items-center justify-center w-12 h-12 md:w-16 md:h-16 rounded-full bg-primary/10 mb-3 md:mb-4">
+                  <feature.icon className="w-6 h-6 md:w-8 md:h-8 text-primary" />
                 </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">{feature.title}</h3>
-                <p className="text-muted-foreground">{feature.description}</p>
+                <h3 className="text-sm md:text-lg font-semibold text-foreground mb-1 md:mb-2">{feature.title}</h3>
+                <p className="text-xs md:text-base text-muted-foreground">{feature.description}</p>
               </div>
             ))}
           </div>

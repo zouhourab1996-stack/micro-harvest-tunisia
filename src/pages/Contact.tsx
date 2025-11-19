@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Phone, MessageCircle, Clock, Globe, Send } from "lucide-react";
 import SEO from "@/components/SEO";
+import Header from "@/components/Header";
 
 const Contact = () => {
   const currentUrl = window.location.href;
@@ -35,39 +36,16 @@ const Contact = () => {
       />
 
       <div className="min-h-screen bg-background">
-        {/* Header */}
-        <header className="border-b bg-card/50 backdrop-blur-sm sticky top-0 z-50">
-          <div className="container mx-auto px-4 py-4">
-            <nav className="flex justify-between items-center">
-              <Link to="/" className="text-2xl font-bold text-primary hover:text-primary/90 transition-colors">
-                Divine Guidance
-              </Link>
-              <div className="flex gap-4">
-                <Link to="/">
-                  <Button variant="ghost">Home</Button>
-                </Link>
-                <Link to="/blog">
-                  <Button variant="ghost">Blog</Button>
-                </Link>
-                <Link to="/about">
-                  <Button variant="ghost">About</Button>
-                </Link>
-                <Link to="/testimonials">
-                  <Button variant="ghost">Testimonials</Button>
-                </Link>
-              </div>
-            </nav>
-          </div>
-        </header>
+        <Header />
 
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-b from-primary/5 to-background">
+        <section className="py-12 md:py-20 bg-gradient-to-b from-primary/5 to-background">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-5xl font-bold mb-6 text-foreground">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 text-foreground">
                 Get in Touch
               </h1>
-              <p className="text-xl text-muted-foreground mb-8">
+              <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 md:mb-8">
                 Ready to receive your prophetic word or have questions? We're here to help you 24/7
               </p>
             </div>
@@ -75,10 +53,10 @@ const Contact = () => {
         </section>
 
         {/* Contact Methods */}
-        <section className="py-16">
+        <section className="py-12 md:py-16">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
-              <div className="grid md:grid-cols-3 gap-6 mb-12">
+              <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mb-8 md:mb-12">
                 <Card className="hover:shadow-lg transition-shadow">
                   <CardContent className="pt-6 text-center">
                     <MessageCircle className="h-12 w-12 text-primary mx-auto mb-4" />

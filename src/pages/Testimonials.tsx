@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Quote } from "lucide-react";
 import SEO from "@/components/SEO";
+import Header from "@/components/Header";
 
 const testimonials = [
   {
@@ -120,60 +121,37 @@ const Testimonials = () => {
       />
 
       <div className="min-h-screen bg-background">
-        {/* Header */}
-        <header className="border-b bg-card/50 backdrop-blur-sm sticky top-0 z-50">
-          <div className="container mx-auto px-4 py-4">
-            <nav className="flex justify-between items-center">
-              <Link to="/" className="text-2xl font-bold text-primary hover:text-primary/90 transition-colors">
-                Divine Guidance
-              </Link>
-              <div className="flex gap-4">
-                <Link to="/">
-                  <Button variant="ghost">Home</Button>
-                </Link>
-                <Link to="/blog">
-                  <Button variant="ghost">Blog</Button>
-                </Link>
-                <Link to="/about">
-                  <Button variant="ghost">About</Button>
-                </Link>
-                <Link to="/contact">
-                  <Button variant="outline">Contact</Button>
-                </Link>
-              </div>
-            </nav>
-          </div>
-        </header>
+        <Header />
 
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-b from-primary/5 to-background">
+        <section className="py-12 md:py-20 bg-gradient-to-b from-primary/5 to-background">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <div className="flex justify-center gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-8 w-8 fill-primary text-primary" />
+                  <Star key={i} className="h-6 w-6 md:h-8 md:w-8 fill-primary text-primary" />
                 ))}
               </div>
-              <h1 className="text-5xl font-bold mb-6 text-foreground">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 text-foreground">
                 490+ Five-Star Testimonials
               </h1>
-              <p className="text-xl text-muted-foreground mb-8">
+              <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 md:mb-8">
                 Real stories from real clients who experienced life-changing prophetic words and divine breakthroughs
               </p>
-              <div className="inline-flex items-center gap-4 bg-card px-6 py-3 rounded-lg border">
+              <div className="inline-flex flex-wrap items-center justify-center gap-3 md:gap-4 bg-card px-4 md:px-6 py-2 md:py-3 rounded-lg border">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary">5.0</div>
-                  <div className="text-sm text-muted-foreground">Average Rating</div>
+                  <div className="text-2xl md:text-3xl font-bold text-primary">5.0</div>
+                  <div className="text-xs md:text-sm text-muted-foreground">Average Rating</div>
                 </div>
-                <div className="h-12 w-px bg-border" />
+                <div className="h-8 md:h-12 w-px bg-border" />
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary">490+</div>
-                  <div className="text-sm text-muted-foreground">Happy Clients</div>
+                  <div className="text-2xl md:text-3xl font-bold text-primary">490+</div>
+                  <div className="text-xs md:text-sm text-muted-foreground">Happy Clients</div>
                 </div>
-                <div className="h-12 w-px bg-border" />
+                <div className="h-8 md:h-12 w-px bg-border" />
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary">30+</div>
-                  <div className="text-sm text-muted-foreground">Countries Served</div>
+                  <div className="text-2xl md:text-3xl font-bold text-primary">30+</div>
+                  <div className="text-xs md:text-sm text-muted-foreground">Countries Served</div>
                 </div>
               </div>
             </div>

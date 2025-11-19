@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle2, Heart, BookOpen, Users, Award, Shield } from "lucide-react";
 import SEO from "@/components/SEO";
+import Header from "@/components/Header";
 
 const About = () => {
   const currentUrl = window.location.href;
@@ -32,39 +33,16 @@ const About = () => {
       />
 
       <div className="min-h-screen bg-background">
-        {/* Header */}
-        <header className="border-b bg-card/50 backdrop-blur-sm sticky top-0 z-50">
-          <div className="container mx-auto px-4 py-4">
-            <nav className="flex justify-between items-center">
-              <Link to="/" className="text-2xl font-bold text-primary hover:text-primary/90 transition-colors">
-                Divine Guidance
-              </Link>
-              <div className="flex gap-4">
-                <Link to="/">
-                  <Button variant="ghost">Home</Button>
-                </Link>
-                <Link to="/blog">
-                  <Button variant="ghost">Blog</Button>
-                </Link>
-                <Link to="/testimonials">
-                  <Button variant="ghost">Testimonials</Button>
-                </Link>
-                <Link to="/contact">
-                  <Button variant="outline">Contact</Button>
-                </Link>
-              </div>
-            </nav>
-          </div>
-        </header>
+        <Header />
 
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-b from-primary/5 to-background">
+        <section className="py-12 md:py-20 bg-gradient-to-b from-primary/5 to-background">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-5xl font-bold mb-6 text-foreground">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 text-foreground">
                 About Our Prophetic Ministry
               </h1>
-              <p className="text-xl text-muted-foreground mb-8">
+              <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 md:mb-8">
                 Helping believers worldwide discover their divine purpose and walk in spiritual clarity since 2015
               </p>
             </div>
@@ -72,9 +50,9 @@ const About = () => {
         </section>
 
         {/* Main Content */}
-        <section className="py-16">
+        <section className="py-12 md:py-16">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto space-y-12">
+            <div className="max-w-4xl mx-auto space-y-8 md:space-y-12">
               {/* Our Story */}
               <div>
                 <h2 className="text-3xl font-bold mb-6">Our Story & Mission</h2>
