@@ -54,8 +54,8 @@ Disallow: /
 User-agent: Google-Extended
 Disallow: /
 
-# Sitemap Location - IMPORTANT: Update with your actual domain
-Sitemap: https://yoursite.com/sitemap.xml
+# Sitemap Location
+Sitemap: https://www.globalfarm.nichesite.org/sitemap.xml
 
 # Additional Indexing Instructions
 # Maximum crawling for all major search engines
