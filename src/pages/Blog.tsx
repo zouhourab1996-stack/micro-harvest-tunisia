@@ -25,6 +25,15 @@ const blogPosts = [
     keywords: "signs you need prophetic word, when to get prophetic guidance, spiritual direction signs"
   },
   {
+    id: "dream-interpretation-biblical-meaning",
+    title: "Dream Interpretation: Biblical Meaning & Spiritual Significance",
+    excerpt: "Unlock the biblical meaning of your dreams and discover what God is revealing through your nighttime visions with this comprehensive guide.",
+    date: "2025-01-14",
+    readTime: "9 min read",
+    category: "Dream Interpretation",
+    keywords: "dream interpretation biblical meaning, spiritual dreams explained, biblical dream symbols, Christian dream interpretation"
+  },
+  {
     id: "prophetic-blessings-vs-prophetic-word",
     title: "Prophetic Blessings vs. Prophetic Word: What's the Difference?",
     excerpt: "Understanding the key differences between prophetic blessings and prophetic words helps you choose the right spiritual service for your needs.",
@@ -32,6 +41,15 @@ const blogPosts = [
     readTime: "7 min read",
     category: "Biblical Wisdom",
     keywords: "prophetic blessings explained, difference prophetic word blessing, types of prophecy"
+  },
+  {
+    id: "how-to-know-your-spiritual-gifts",
+    title: "How to Know Your Spiritual Gifts: Complete Discovery Guide",
+    excerpt: "Discover your unique spiritual gifts through biblical principles, prophetic insight, and practical exercises to activate your divine calling.",
+    date: "2025-01-13",
+    readTime: "10 min read",
+    category: "Spiritual Gifts",
+    keywords: "how to know your spiritual gifts, spiritual gifts test, discover spiritual gifts, spiritual gifts identification"
   },
   {
     id: "biblical-foundation-prophetic-ministry",
@@ -43,6 +61,15 @@ const blogPosts = [
     keywords: "biblical prophetic ministry, scripture on prophecy, modern day prophets"
   },
   {
+    id: "online-prophetic-ministry-how-to-choose",
+    title: "How to Choose a Legitimate Online Prophetic Ministry",
+    excerpt: "Learn the essential criteria for selecting an authentic online prophetic ministry and avoid false prophets with this comprehensive guide.",
+    date: "2025-01-12",
+    readTime: "8 min read",
+    category: "Ministry Selection",
+    keywords: "legitimate prophetic ministry online, how to choose prophetic minister, authentic prophecy online, avoid false prophets"
+  },
+  {
     id: "preparing-heart-prophetic-word",
     title: "Preparing Your Heart to Receive a Prophetic Word",
     excerpt: "Essential spiritual preparation steps to ensure you're ready to receive and understand your prophetic word with clarity and faith.",
@@ -52,6 +79,24 @@ const blogPosts = [
     keywords: "prepare for prophetic word, spiritual readiness, receiving prophecy"
   },
   {
+    id: "how-to-test-prophetic-word-accuracy",
+    title: "How to Test the Accuracy of a Prophetic Word: Biblical Guidelines",
+    excerpt: "Learn the biblical tests every prophetic word must pass to ensure authenticity, accuracy, and alignment with God's character.",
+    date: "2025-01-11",
+    readTime: "7 min read",
+    category: "Prophetic Testing",
+    keywords: "test prophetic word accuracy, biblical tests for prophecy, verify prophetic word, authentic prophecy validation"
+  },
+  {
+    id: "biblical-guidance-for-major-life-decisions",
+    title: "Biblical Guidance for Major Life Decisions: 7 Steps to Divine Direction",
+    excerpt: "Make confident life decisions using biblical wisdom and prophetic guidance with these 7 proven steps for hearing God's voice clearly.",
+    date: "2025-01-10",
+    readTime: "9 min read",
+    category: "Decision Making",
+    keywords: "biblical guidance for decisions, divine direction for life choices, hearing God for decisions, spiritual guidance decisions"
+  },
+  {
     id: "testimonies-life-changing-prophetic-words",
     title: "Real Testimonies: Life-Changing Prophetic Words That Transformed Lives",
     excerpt: "Read powerful true stories of how prophetic words brought breakthrough, healing, and divine direction to people's lives.",
@@ -59,6 +104,33 @@ const blogPosts = [
     readTime: "12 min read",
     category: "Testimonies",
     keywords: "prophetic word testimonies, real prophecy stories, life transformation through prophecy"
+  },
+  {
+    id: "spiritual-breakthrough-how-prophetic-words-unlock",
+    title: "Spiritual Breakthrough: How Prophetic Words Unlock Your Destiny",
+    excerpt: "Discover how prophetic words remove spiritual barriers and unlock breakthrough in finances, relationships, ministry, and purpose.",
+    date: "2025-01-09",
+    readTime: "8 min read",
+    category: "Breakthrough",
+    keywords: "spiritual breakthrough prophetic word, breakthrough through prophecy, unlock destiny prophecy, prophetic breakthrough"
+  },
+  {
+    id: "prophetic-word-vs-psychic-reading-difference",
+    title: "Prophetic Word vs. Psychic Reading: Critical Differences Every Christian Should Know",
+    excerpt: "Understand the fundamental differences between biblical prophetic words and psychic readings to protect your spiritual journey.",
+    date: "2025-01-09",
+    readTime: "6 min read",
+    category: "Spiritual Discernment",
+    keywords: "prophetic word vs psychic reading, difference prophecy psychic, Christian prophecy vs fortune telling, biblical prophecy explained"
+  },
+  {
+    id: "how-prophetic-words-work-spiritually",
+    title: "How Prophetic Words Work: The Spiritual Mechanics of Prophecy",
+    excerpt: "Explore the spiritual mechanics of how prophetic words are received, delivered, and manifested in believers' lives.",
+    date: "2025-01-08",
+    readTime: "10 min read",
+    category: "Prophetic Education",
+    keywords: "how prophetic words work, prophecy spiritual mechanics, how prophecy functions, prophetic word explanation"
   }
 ];
 
