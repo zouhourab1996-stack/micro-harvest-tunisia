@@ -4,15 +4,38 @@
 <head>
   <meta content='IE=edge' http-equiv='X-UA-Compatible'/>
   <meta content='width=device-width,initial-scale=1.0' name='viewport'/>
+  <meta name='theme-color' content='#1e40af'/>
   
   <title>Prophetic Word 2025 | Get Your Prophetic Word Online - 490+ 5-Star Reviews</title>
   <meta content='Get your prophetic word for 2025! Receive an accurate prophetic word from experienced spiritual advisor. 490+ 5-star reviews. What is a prophetic word? Discover divine direction, breakthrough answers &#38; biblical wisdom. Fast 24-48hr delivery.' name='description'/>
   <meta content='prophetic word, get prophetic word, what is a prophetic word, prophetic word 2025, prophetic word online, prophetic word for your life, spiritual guidance, divine direction, biblical prophecy, prophetic blessings' name='keywords'/>
   <meta content='John S - Divine Spiritual Guidance' name='author'/>
+  <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'/>
+  <meta name='googlebot' content='index, follow'/>
+  <link rel='canonical' href='https://propheticguidance2026.blogspot.com'/>
   
   <meta content='Divine Spiritual Guidance - Prophetic Word Services' property='og:site_name'/>
   <meta content='Prophetic Word 2025 | Get Your Prophetic Word Online' property='og:title'/>
+  <meta content='Get your prophetic word for 2025 from experienced spiritual advisor with 490+ 5-star reviews. Fast 24-48hr delivery.' property='og:description'/>
   <meta content='website' property='og:type'/>
+  <meta content='https://propheticguidance2026.blogspot.com' property='og:url'/>
+  <meta content='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&#38;fit=crop&#38;w=1200&#38;q=80' property='og:image'/>
+  <meta content='1200' property='og:image:width'/>
+  <meta content='630' property='og:image:height'/>
+  
+  <meta name='twitter:card' content='summary_large_image'/>
+  <meta name='twitter:title' content='Prophetic Word 2025 | Get Your Prophetic Word Online'/>
+  <meta name='twitter:description' content='Receive an accurate prophetic word from experienced spiritual advisor. 490+ 5-star reviews. Fast 24-48hr delivery.'/>
+  <meta name='twitter:image' content='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&#38;fit=crop&#38;w=1200&#38;q=80'/>
+  
+  <!-- Google Analytics (GA4) - Replace G-XXXXXXXXXX with your tracking ID -->
+  <script async='async' src='https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX'></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
   
   <script type='application/ld+json'>
   {
@@ -109,12 +132,14 @@
   a{color:inherit;text-decoration:none;transition:all 0.3s}
   img{max-width:100%;height:auto;display:block}
   
-  .header{background:#ffffff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-index:1000;box-shadow:0 1px 3px 0 rgba(0,0,0,0.1)}
+  .header{background:#ffffff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-index:1000;box-shadow:0 1px 3px 0 rgba(0,0,0,0.1);backdrop-filter:blur(10px)}
   .header-container{max-width:1200px;margin:0 auto;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
   .logo{font-size:1.5rem;font-weight:800;color:#1e40af;background:linear-gradient(135deg,#1e40af,#3b82f6);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
   .nav{display:flex;gap:0.5rem;align-items:center;flex-wrap:wrap}
-  .nav a{padding:0.5rem 1rem;border-radius:0.375rem;color:#0a0a0a;font-weight:500}
+  .nav a{padding:0.5rem 1rem;border-radius:0.375rem;color:#0a0a0a;font-weight:500;transition:all 0.3s}
   .nav a:hover{background:#f3f4f6;color:#1e40af}
+  .menu-toggle{display:none;background:none;border:none;font-size:1.75rem;cursor:pointer;color:#1e40af;padding:0.5rem;line-height:1}
+  .menu-toggle:hover{opacity:0.8}
   
   .btn{padding:0.75rem 1.5rem;border-radius:0.375rem;border:none;cursor:pointer;font-weight:600;font-size:1rem;display:inline-block;text-align:center;transition:all 0.3s;text-decoration:none}
   .btn-primary{background:#1e40af;color:#ffffff;box-shadow:0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px -1px rgba(0,0,0,0.1)}
@@ -190,8 +215,12 @@
   .footer-disclaimer{border-top:1px solid rgba(255,255,255,0.2);padding-top:2rem;margin-top:2rem;font-size:0.813rem;color:rgba(255,255,255,0.7);line-height:1.6}
   
   @media(max-width:768px){
-    .header-container{flex-direction:column;text-align:center;padding:1rem}
-    .nav{justify-content:center;width:100%}
+    .header-container{flex-direction:row;text-align:left;padding:1rem}
+    .menu-toggle{display:block}
+    .nav{position:absolute;top:100%;left:0;right:0;background:#ffffff;flex-direction:column;padding:1rem 0;box-shadow:0 4px 6px -1px rgba(0,0,0,0.1);display:none;border-top:1px solid #e5e7eb}
+    .nav.active{display:flex}
+    .nav a{width:100%;text-align:left;padding:0.75rem 2rem;margin:0}
+    .nav a:hover{background:#f9fafb}
     .hero{padding:2rem 1rem}
     .hero h1{font-size:1.75rem}
     .section{padding:2.5rem 0}
@@ -213,7 +242,8 @@
   <header class='header'>
     <div class='header-container'>
       <div class='logo'>Divine Guidance</div>
-      <nav class='nav'>
+      <button class='menu-toggle' onclick='toggleMenu()' aria-label='Toggle menu'>⋮</button>
+      <nav class='nav' id='mainNav'>
         <a href='#home'>Home</a>
         <a href='#services'>Services</a>
         <a href='#testimonials'>Testimonials</a>
@@ -525,6 +555,43 @@
   <b:section class='main' id='main' maxwidgets='1' showaddelement='no' style='display:none'>
     <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' visible='false'/>
   </b:section>
+
+  <!-- Navigation Toggle Script -->
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('mainNav');
+      nav.classList.toggle('active');
+    }
+    
+    // Close menu when clicking on a link
+    document.querySelectorAll('.nav a').forEach(link => {
+      link.addEventListener('click', function() {
+        document.getElementById('mainNav').classList.remove('active');
+      });
+    });
+    
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          const offset = 80;
+          const targetPos = target.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({top: targetPos, behavior: 'smooth'});
+        }
+      });
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+      const nav = document.getElementById('mainNav');
+      const toggle = document.querySelector('.menu-toggle');
+      if (!nav.contains(e.target) &#38;&#38; !toggle.contains(e.target)) {
+        nav.classList.remove('active');
+      }
+    });
+  </script>
 
 </body>
 </html>
