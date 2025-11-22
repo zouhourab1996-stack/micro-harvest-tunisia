@@ -204,6 +204,11 @@
     </div>
   </header>
 
+  <!-- Main Content Section -->
+  <b:section id='main' maxwidgets='1' showaddelement='no'>
+    <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' visible='true'>
+      <b:includable id='main' var='top'>
+        
   <b:if cond='data:blog.pageType == &quot;index&quot;'>
     <!-- Hero Section -->
     <section class='hero'>
@@ -563,6 +568,10 @@
       </div>
     </div>
   </b:if>
+
+      </b:includable>
+    </b:widget>
+  </b:section>
 
   <!-- Footer -->
   <footer class='footer'>
