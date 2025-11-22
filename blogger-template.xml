@@ -185,7 +185,7 @@
   ]]></b:skin>
   
   <b:template-skin>
-    <b:variable default='960px' name='content.width' type='length' value='100%'/>
+    <b:variable default='960px' name='content.width' type='length' value='1200px'/>
   </b:template-skin>
 </head>
 
