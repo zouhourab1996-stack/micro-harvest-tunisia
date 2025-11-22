@@ -3,14 +3,13 @@
 <html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
 <head>
   <meta content='IE=edge' http-equiv='X-UA-Compatible'/>
-  <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0' name='viewport'/>
+  <meta content='width=device-width,initial-scale=1.0' name='viewport'/>
   
-  <!-- SEO Meta Tags -->
-  <b:if cond='data:blog.pageType == &quot;index&quot;'>
+  <b:if cond='data:blog.pageType == "index"'>
     <title>Prophetic Word 2025 | Get Your Prophetic Word Online - 490+ 5-Star Reviews</title>
-    <meta content='Get your prophetic word for 2025! Receive an accurate prophetic word from experienced spiritual advisor. 490+ 5-star reviews. Discover divine direction, breakthrough answers &amp; biblical wisdom. Fast 24-48hr delivery.' name='description'/>
+    <meta content='Get your prophetic word for 2025! Receive an accurate prophetic word from experienced spiritual advisor. 490+ 5-star reviews. Discover divine direction, breakthrough answers and biblical wisdom. Fast 24-48hr delivery.' name='description'/>
   </b:if>
-  <b:if cond='data:blog.pageType == &quot;item&quot;'>
+  <b:if cond='data:blog.pageType == "item"'>
     <title><data:blog.pageName/> | Divine Spiritual Guidance</title>
     <meta expr:content='data:blog.metaDescription' name='description'/>
   </b:if>
@@ -19,32 +18,17 @@
   <meta content='John S - Divine Spiritual Guidance' name='author'/>
   <link expr:href='data:blog.homepageUrl' rel='canonical'/>
   
-  <!-- Open Graph Meta Tags -->
   <meta content='Divine Spiritual Guidance - Prophetic Word Services' property='og:site_name'/>
   <meta expr:content='data:blog.title' property='og:title'/>
   <meta content='website' property='og:type'/>
   <meta expr:content='data:blog.url' property='og:url'/>
-  <meta content='Get your prophetic word for 2025. 490+ five-star reviews. Fast delivery. Biblical wisdom.' property='og:description'/>
   
-  <!-- Twitter Card -->
-  <meta content='summary_large_image' name='twitter:card'/>
-  <meta content='Prophetic Word 2025 | Divine Spiritual Guidance' name='twitter:title'/>
-  <meta content='Get your prophetic word for 2025. 490+ five-star reviews. Fast delivery. Biblical wisdom.' name='twitter:description'/>
-  
-  <!-- Schema.org Structured Data - Organization & Services -->
   <script type='application/ld+json'>
   {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    "name": "Prophetic Word &amp; Spiritual Guidance Services",
-    "description": "Expert spiritual guidance reveals divine purpose, breakthrough answers &amp; biblical wisdom. Get your prophetic word for 2025 with fast 24-48hr delivery.",
-    "url": "<data:blog.homepageUrl/>",
-    "provider": {
-      "@type": "Person",
-      "name": "John S",
-      "jobTitle": "Master Prophet &amp; Spiritual Advisor",
-      "description": "With 20+ years of experience helping individuals navigate life's challenges through prophetic insight and biblical wisdom."
-    },
+    "name": "Prophetic Word and Spiritual Guidance Services",
+    "description": "Expert spiritual guidance reveals divine purpose, breakthrough answers and biblical wisdom. Get your prophetic word for 2025 with fast 24-48hr delivery.",
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5.0",
@@ -54,143 +38,129 @@
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+216-93-816-607",
-      "contactType": "Customer Service",
-      "availableLanguage": ["English"]
-    },
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Prophetic Services",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Divine Word for 2025",
-            "description": "Receive a powerful prophetic word specifically for your life in 2025. Discover divine direction, breakthrough answers, and biblical wisdom tailored to your unique journey.",
-            "provider": {
-              "@type": "Person",
-              "name": "John S"
-            }
-          },
-          "price": "5.00",
-          "priceCurrency": "USD"
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Prophetic Blessings Package",
-            "description": "Experience divine favor through prophetic blessings. Includes personalized prayers for breakthrough, protection, and abundance in every area of your life.",
-            "provider": {
-              "@type": "Person",
-              "name": "John S"
-            }
-          },
-          "price": "10.00",
-          "priceCurrency": "USD"
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Biblical Spiritual Word",
-            "description": "Receive biblically-grounded spiritual guidance for your life decisions. Each word is rooted in scripture and delivered with prophetic clarity.",
-            "provider": {
-              "@type": "Person",
-              "name": "John S"
-            }
-          },
-          "price": "15.00",
-          "priceCurrency": "USD"
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Prophetic Word for Your Life",
-            "description": "Comprehensive prophetic reading covering your destiny, purpose, relationships, career, and spiritual journey. The most detailed and transformative prophetic guidance.",
-            "provider": {
-              "@type": "Person",
-              "name": "John S"
-            }
-          },
-          "price": "30.00",
-          "priceCurrency": "USD"
-        }
-      ]
+      "contactType": "Customer Service"
     }
   }
   </script>
   
-  <!-- Schema.org - FAQPage -->
-  <script type='application/ld+json'>
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What is a prophetic word?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "A prophetic word is divine spiritual guidance that reveals God's purpose, direction, and insight for your life. It provides clarity about your future, helps you understand your calling, and offers biblical wisdom for important decisions. Prophetic words are rooted in scripture and delivered through spiritual discernment."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How do I receive my prophetic word?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "After selecting your service, you'll receive a WhatsApp contact link. Simply send your order details and transaction confirmation via WhatsApp to +216-93-816-607. Your personalized prophetic word will be delivered within 24-48 hours through written text or audio message."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How accurate are the prophetic words?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Our prophetic words have a proven track record with 490+ five-star reviews. Clients consistently report experiencing breakthrough, clarity, and accurate guidance. Each word is delivered through prayer, biblical study, and spiritual discernment to ensure authenticity and accuracy."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What makes your service different?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We combine 20+ years of prophetic experience with a commitment to biblical accuracy and personalized guidance. Each word is uniquely crafted for you, delivered quickly (24-48hrs), and backed by hundreds of testimonials. We focus on practical, life-changing spiritual insight that you can apply immediately."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How long does delivery take?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Most prophetic words are delivered within 24-48 hours after order confirmation. Rush delivery may be available upon request. You'll receive your prophetic word via WhatsApp in a format that's easy to save, review, and reflect upon."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I ask specific questions?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes! When placing your order via WhatsApp, you can include specific questions or areas of your life where you need guidance (relationships, career, ministry, finances, health, etc.). This helps us deliver the most relevant and impactful prophetic word for your situation."
-        }
-      }
-    ]
+  <style type='text/css'>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f9f7f4;color:#2c3e50;line-height:1.6;margin:0;padding:0}
+  h1,h2,h3{line-height:1.3;font-weight:700;margin-bottom:1rem}
+  h1{font-size:2.5rem}
+  h2{font-size:2rem}
+  h3{font-size:1.5rem}
+  a{color:inherit;text-decoration:none;transition:all 0.3s}
+  img{max-width:100%;height:auto;display:block}
+  
+  .header{background:#fff;border-bottom:1px solid #e5e5e5;position:sticky;top:0;z-index:1000;box-shadow:0 2px 8px rgba(0,0,0,0.08)}
+  .header-container{max-width:1200px;margin:0 auto;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+  .logo{font-size:1.5rem;font-weight:800;background:linear-gradient(135deg,#2c5f8d,#4a90d9);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+  .nav{display:flex;gap:0.5rem;align-items:center;flex-wrap:wrap}
+  .nav a{padding:0.5rem 1rem;border-radius:0.5rem;color:#2c3e50;font-weight:500}
+  .nav a:hover{background:#f0f0f0;color:#4a90d9}
+  
+  .btn{padding:0.75rem 1.5rem;border-radius:0.5rem;border:none;cursor:pointer;font-weight:600;font-size:1rem;display:inline-block;text-align:center;transition:all 0.3s}
+  .btn-primary{background:linear-gradient(135deg,#4a90d9,#f4c542);color:#fff;box-shadow:0 4px 16px rgba(0,0,0,0.12)}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(0,0,0,0.16)}
+  
+  .hero{background:linear-gradient(135deg,#2c5f8d,#4a90d9);color:#fff;padding:4rem 2rem;text-align:center}
+  .hero h1{font-size:clamp(2rem,5vw,3.5rem);margin-bottom:1.5rem;line-height:1.2}
+  .hero p{font-size:clamp(1rem,2.5vw,1.25rem);margin-bottom:2rem;max-width:700px;margin-left:auto;margin-right:auto}
+  .rating{display:inline-flex;align-items:center;gap:0.5rem;font-size:1.25rem;background:rgba(255,255,255,0.1);padding:0.75rem 1.5rem;border-radius:0.5rem;margin-top:1rem}
+  .star{color:#f4c542;font-size:1.5rem}
+  
+  .container{max-width:1200px;margin:0 auto;padding:0 2rem}
+  .section{padding:4rem 0}
+  .section-title{text-align:center;margin-bottom:3rem}
+  .section-title h2{font-size:clamp(1.75rem,4vw,2.5rem);color:#2c3e50;margin-bottom:0.5rem}
+  .section-title p{color:#6c757d;font-size:1.125rem;max-width:600px;margin:0 auto}
+  .section-muted{background:linear-gradient(180deg,#fff,#f9f7f4)}
+  
+  .value-prop{text-align:center;max-width:900px;margin:3rem auto;padding:3rem 2rem;background:#fff;border-radius:0.5rem;box-shadow:0 4px 16px rgba(0,0,0,0.12)}
+  .value-prop h2{color:#2c5f8d;margin-bottom:1rem}
+  .value-prop p{font-size:1.125rem;color:#6c757d;line-height:1.8}
+  
+  .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;margin:3rem 0}
+  .feature{text-align:center;padding:2rem;background:#fff;border-radius:0.5rem;box-shadow:0 2px 8px rgba(0,0,0,0.08);transition:all 0.3s}
+  .feature:hover{transform:translateY(-5px);box-shadow:0 4px 16px rgba(0,0,0,0.12)}
+  .feature-icon{width:4rem;height:4rem;border-radius:50%;background:linear-gradient(135deg,rgba(74,144,217,0.1),rgba(244,197,66,0.1));display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-size:2rem}
+  .feature h3{font-size:1.25rem;margin-bottom:0.5rem;color:#2c3e50}
+  .feature p{color:#6c757d;font-size:0.95rem}
+  
+  .services-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:2rem;margin:2rem 0}
+  .service-card{background:#fff;border-radius:0.5rem;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.08);transition:all 0.3s;border:2px solid transparent;display:flex;flex-direction:column}
+  .service-card:hover{transform:translateY(-8px);box-shadow:0 8px 32px rgba(0,0,0,0.16);border-color:#4a90d9}
+  .service-image{width:100%;height:200px;background:linear-gradient(135deg,#2c5f8d,#4a90d9);display:flex;align-items:center;justify-content:center;color:#fff;font-size:3rem}
+  .service-content{padding:1.5rem;flex-grow:1;display:flex;flex-direction:column}
+  .service-title{font-size:1.25rem;margin-bottom:0.75rem;color:#2c3e50}
+  .service-description{color:#6c757d;margin-bottom:1rem;line-height:1.6;flex-grow:1;font-size:0.95rem}
+  .service-rating{display:flex;align-items:center;gap:0.5rem;margin-bottom:1rem;color:#f4c542;font-size:1.1rem}
+  .service-rating span{color:#2c3e50;margin-left:0.25rem}
+  .service-price-row{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:1rem;border-top:1px solid #e5e5e5}
+  .price-info{display:flex;flex-direction:column}
+  .price-label{font-size:0.875rem;color:#6c757d;margin-bottom:0.25rem}
+  .price{font-size:2rem;font-weight:800;background:linear-gradient(135deg,#2c5f8d,#4a90d9);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1}
+  
+  .testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;margin:2rem 0}
+  .testimonial-card{background:#fff;padding:2rem;border-radius:0.5rem;box-shadow:0 2px 8px rgba(0,0,0,0.08);transition:all 0.3s;border-left:4px solid #f4c542}
+  .testimonial-card:hover{box-shadow:0 4px 16px rgba(0,0,0,0.12)}
+  .testimonial-rating{color:#f4c542;font-size:1.2rem;margin-bottom:1rem}
+  .testimonial-text{font-style:italic;margin-bottom:1rem;color:#2c3e50;font-size:1rem;line-height:1.7}
+  .testimonial-footer{border-top:1px solid #e5e5e5;padding-top:1rem}
+  .testimonial-author{font-weight:700;color:#2c3e50;margin-bottom:0.25rem}
+  .testimonial-service{font-size:0.875rem;color:#6c757d}
+  
+  .bio-section{max-width:900px;margin:0 auto;background:#fff;padding:3rem;border-radius:0.5rem;box-shadow:0 4px 16px rgba(0,0,0,0.12);text-align:center}
+  .bio-section h2{color:#2c5f8d;margin-bottom:1.5rem}
+  .bio-section h3{color:#4a90d9;margin:2rem 0 1rem;font-size:1.5rem}
+  .bio-section p{color:#6c757d;line-height:1.8;margin-bottom:1rem;font-size:1.05rem}
+  .bio-section ul{text-align:left;max-width:600px;margin:1.5rem auto;list-style:none;padding:0}
+  .bio-section li{padding:0.5rem 0;color:#6c757d;position:relative;padding-left:1.5rem}
+  .bio-section li::before{content:'✓';position:absolute;left:0;color:#f4c542;font-weight:bold}
+  
+  .faq{max-width:900px;margin:0 auto}
+  .faq-item{background:#fff;padding:2rem;margin-bottom:1rem;border-radius:0.5rem;border:1px solid #e5e5e5;transition:all 0.3s}
+  .faq-item:hover{border-color:#4a90d9;box-shadow:0 2px 8px rgba(0,0,0,0.08)}
+  .faq-question{font-size:1.25rem;font-weight:700;margin-bottom:0.75rem;color:#2c5f8d}
+  .faq-answer{color:#6c757d;line-height:1.8;font-size:1rem}
+  
+  .cta-box{background:linear-gradient(135deg,#4a90d9,#f4c542);color:#fff;padding:3rem 2rem;border-radius:0.5rem;text-align:center;margin:3rem auto;max-width:900px;box-shadow:0 8px 32px rgba(0,0,0,0.16)}
+  .cta-box h3{font-size:2rem;margin-bottom:1rem}
+  .cta-box p{font-size:1.125rem;margin-bottom:2rem}
+  
+  .footer{background:#2c5f8d;color:#fff;padding:3rem 2rem;margin-top:4rem}
+  .footer-content{max-width:1200px;margin:0 auto;text-align:center}
+  .footer h3{color:#f4c542;margin-bottom:1rem}
+  .footer p{color:rgba(255,255,255,0.8);line-height:1.8;max-width:800px;margin:0 auto 2rem}
+  .footer-disclaimer{border-top:1px solid rgba(255,255,255,0.2);padding-top:2rem;margin-top:2rem;font-size:0.875rem;color:rgba(255,255,255,0.6)}
+  
+  .post-content{max-width:800px;margin:2rem auto;background:#fff;padding:3rem;border-radius:0.5rem;box-shadow:0 4px 16px rgba(0,0,0,0.12)}
+  .post-content h2{font-size:2rem;margin:2rem 0 1rem;color:#2c3e50}
+  .post-content h3{font-size:1.5rem;margin:1.5rem 0 0.75rem;color:#2c3e50}
+  .post-content p{margin-bottom:1rem;line-height:1.8;color:#6c757d}
+  .post-content ul,.post-content ol{margin-left:2rem;margin-bottom:1rem}
+  .post-content li{margin-bottom:0.5rem;color:#6c757d}
+  
+  @media(max-width:768px){
+    .header-container{flex-direction:column;text-align:center}
+    .nav{justify-content:center}
+    .hero{padding:3rem 1.5rem}
+    .hero h1{font-size:2rem}
+    .section{padding:3rem 0}
+    .services-grid,.testimonials-grid{grid-template-columns:1fr}
+    .bio-section,.post-content{padding:2rem}
   }
-  </script>
+  @media(max-width:480px){
+    .container{padding:0 1rem}
+    .btn{padding:0.65rem 1.25rem;font-size:0.95rem}
+  }
+  </style>
   
-  <b:skin><![CDATA[
-  *{margin:0;padding:0;box-sizing:border-box}:root{--clr-deep-blue:hsl(220,60%,25%);--clr-royal-blue:hsl(220,70%,45%);--clr-gold:hsl(42,95%,55%);--clr-light-gold:hsl(42,85%,70%);--clr-white:hsl(0,0%,100%);--clr-off-white:hsl(38,25%,97%);--clr-text-dark:hsl(220,50%,15%);--clr-text-muted:hsl(220,15%,45%);--clr-border:hsl(220,20%,90%);--gradient-primary:linear-gradient(135deg,hsl(220,60%,25%),hsl(220,70%,45%));--gradient-cta:linear-gradient(135deg,hsl(220,70%,45%),hsl(42,95%,55%));--gradient-soft:linear-gradient(180deg,hsl(0,0%,100%),hsl(38,25%,98%));--shadow-sm:0 2px 8px rgba(0,0,0,0.08);--shadow-md:0 4px 16px rgba(0,0,0,0.12);--shadow-lg:0 8px 32px rgba(0,0,0,0.16);--shadow-glow:0 0 40px hsla(42,95%,55%,0.25);--radius:0.5rem;--transition:all 0.3s cubic-bezier(0.4,0,0.2,1)}body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;background:var(--clr-off-white);color:var(--clr-text-dark);line-height:1.6;margin:0;padding:0}h1,h2,h3,h4,h5,h6{line-height:1.3;font-weight:700;margin-bottom:1rem}h1{font-size:2.5rem}h2{font-size:2rem}h3{font-size:1.5rem}a{color:inherit;text-decoration:none;transition:var(--transition)}img{max-width:100%;height:auto;display:block}.header{background:var(--clr-white);border-bottom:1px solid var(--clr-border);position:sticky;top:0;z-index:1000;box-shadow:var(--shadow-sm)}.header-container{max-width:1200px;margin:0 auto;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}.logo{font-size:1.5rem;font-weight:800;background:var(--gradient-primary);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}.nav{display:flex;gap:0.5rem;align-items:center;flex-wrap:wrap}.nav a{padding:0.5rem 1rem;border-radius:var(--radius);color:var(--clr-text-dark);font-weight:500;transition:var(--transition)}.nav a:hover{background:var(--clr-off-white);color:var(--clr-royal-blue)}.btn{padding:0.75rem 1.5rem;border-radius:var(--radius);border:none;cursor:pointer;font-weight:600;font-size:1rem;display:inline-block;transition:var(--transition);text-align:center}.btn-primary{background:var(--gradient-cta);color:var(--clr-white);box-shadow:var(--shadow-md)}.btn-primary:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg),var(--shadow-glow)}.btn-outline{border:2px solid var(--clr-royal-blue);color:var(--clr-royal-blue);background:transparent}.btn-outline:hover{background:var(--clr-royal-blue);color:var(--clr-white)}.hero{background:var(--gradient-primary);color:var(--clr-white);padding:4rem 2rem;text-align:center;position:relative;overflow:hidden}.hero::before{content:'';position:absolute;top:-50%;right:-50%;width:100%;height:100%;background:radial-gradient(circle,hsla(42,95%,55%,0.15),transparent);animation:pulse 4s ease-in-out infinite}@keyframes pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.1);opacity:0.8}}.hero-container{max-width:900px;margin:0 auto;position:relative;z-index:1}.hero h1{font-size:clamp(2rem,5vw,3.5rem);margin-bottom:1.5rem;line-height:1.2;text-shadow:0 2px 10px rgba(0,0,0,0.2)}.hero p{font-size:clamp(1rem,2.5vw,1.25rem);margin-bottom:2rem;opacity:0.95;max-width:700px;margin-left:auto;margin-right:auto}.hero-cta{display:inline-flex;flex-direction:column;gap:1rem;margin-top:2rem}.rating{display:inline-flex;align-items:center;gap:0.5rem;font-size:1.25rem;background:rgba(255,255,255,0.1);padding:0.75rem 1.5rem;border-radius:var(--radius);backdrop-filter:blur(10px);margin-top:1rem}.star{color:var(--clr-gold);fill:var(--clr-gold);width:24px;height:24px}.container{max-width:1200px;margin:0 auto;padding:0 2rem}.section{padding:4rem 0}.section-title{text-align:center;margin-bottom:3rem}.section-title h2{font-size:clamp(1.75rem,4vw,2.5rem);color:var(--clr-text-dark);margin-bottom:0.5rem}.section-title p{color:var(--clr-text-muted);font-size:1.125rem;max-width:600px;margin:0 auto}.section-muted{background:var(--gradient-soft)}.value-prop{text-align:center;max-width:900px;margin:3rem auto;padding:3rem 2rem;background:var(--clr-white);border-radius:var(--radius);box-shadow:var(--shadow-md)}.value-prop h2{color:var(--clr-deep-blue);margin-bottom:1rem}.value-prop p{font-size:1.125rem;color:var(--clr-text-muted);line-height:1.8}.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;margin:3rem 0}.feature{text-align:center;padding:2rem;background:var(--clr-white);border-radius:var(--radius);box-shadow:var(--shadow-sm);transition:var(--transition)}.feature:hover{transform:translateY(-5px);box-shadow:var(--shadow-md)}.feature-icon{width:4rem;height:4rem;border-radius:50%;background:linear-gradient(135deg,hsla(220,70%,45%,0.1),hsla(42,95%,55%,0.1));display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-size:2rem}.feature h3{font-size:1.25rem;margin-bottom:0.5rem;color:var(--clr-text-dark)}.feature p{color:var(--clr-text-muted);font-size:0.95rem}.services-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:2rem;margin:2rem 0}.service-card{background:var(--clr-white);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);transition:var(--transition);border:2px solid transparent;display:flex;flex-direction:column}.service-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg);border-color:var(--clr-royal-blue)}.service-image{width:100%;height:200px;object-fit:cover;background:var(--gradient-primary)}.service-content{padding:1.5rem;flex-grow:1;display:flex;flex-direction:column}.service-title{font-size:1.25rem;margin-bottom:0.75rem;color:var(--clr-text-dark)}.service-description{color:var(--clr-text-muted);margin-bottom:1rem;line-height:1.6;flex-grow:1;font-size:0.95rem}.service-rating{display:flex;align-items:center;gap:0.5rem;margin-bottom:1rem}.service-price-row{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:1rem;border-top:1px solid var(--clr-border)}.price-info{display:flex;flex-direction:column}.price-label{font-size:0.875rem;color:var(--clr-text-muted);margin-bottom:0.25rem}.price{font-size:2rem;font-weight:800;background:var(--gradient-primary);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1}.testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;margin:2rem 0}.testimonial-card{background:var(--clr-white);padding:2rem;border-radius:var(--radius);box-shadow:var(--shadow-sm);transition:var(--transition);border-left:4px solid var(--clr-gold)}.testimonial-card:hover{box-shadow:var(--shadow-md)}.testimonial-rating{display:flex;gap:0.25rem;margin-bottom:1rem}.testimonial-text{font-style:italic;margin-bottom:1rem;color:var(--clr-text-dark);font-size:1rem;line-height:1.7}.testimonial-footer{border-top:1px solid var(--clr-border);padding-top:1rem}.testimonial-author{font-weight:700;color:var(--clr-text-dark);margin-bottom:0.25rem}.testimonial-service{font-size:0.875rem;color:var(--clr-text-muted)}.bio-section{max-width:900px;margin:0 auto;background:var(--clr-white);padding:3rem;border-radius:var(--radius);box-shadow:var(--shadow-md);text-align:center}.bio-section h2{color:var(--clr-deep-blue);margin-bottom:1.5rem}.bio-section h3{color:var(--clr-royal-blue);margin:2rem 0 1rem;font-size:1.5rem}.bio-section p{color:var(--clr-text-muted);line-height:1.8;margin-bottom:1rem;font-size:1.05rem}.bio-section ul{text-align:left;max-width:600px;margin:1.5rem auto;list-style:none;padding:0}.bio-section li{padding:0.5rem 0;color:var(--clr-text-muted);position:relative;padding-left:1.5rem}.bio-section li::before{content:'✓';position:absolute;left:0;color:var(--clr-gold);font-weight:bold}.faq{max-width:900px;margin:0 auto}.faq-item{background:var(--clr-white);padding:2rem;margin-bottom:1rem;border-radius:var(--radius);border:1px solid var(--clr-border);transition:var(--transition)}.faq-item:hover{border-color:var(--clr-royal-blue);box-shadow:var(--shadow-sm)}.faq-question{font-size:1.25rem;font-weight:700;margin-bottom:0.75rem;color:var(--clr-deep-blue)}.faq-answer{color:var(--clr-text-muted);line-height:1.8;font-size:1rem}.blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:2rem;margin:2rem 0}.blog-card{background:var(--clr-white);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);transition:var(--transition)}.blog-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-md)}.blog-header{padding:1.5rem;border-bottom:1px solid var(--clr-border)}.blog-meta{display:flex;gap:1rem;color:var(--clr-text-muted);font-size:0.875rem;margin-bottom:1rem}.blog-title{font-size:1.25rem;margin-bottom:0.5rem;color:var(--clr-text-dark)}.blog-title a{color:var(--clr-text-dark)}.blog-title a:hover{color:var(--clr-royal-blue)}.blog-category{color:var(--clr-royal-blue);font-weight:600;font-size:0.875rem;text-transform:uppercase;letter-spacing:0.5px}.blog-content{padding:1.5rem}.blog-excerpt{color:var(--clr-text-muted);margin-bottom:1rem;line-height:1.6}.post-content{max-width:800px;margin:2rem auto;background:var(--clr-white);padding:3rem;border-radius:var(--radius);box-shadow:var(--shadow-md)}.post-content h2{font-size:2rem;margin:2rem 0 1rem;color:var(--clr-text-dark)}.post-content h3{font-size:1.5rem;margin:1.5rem 0 0.75rem;color:var(--clr-text-dark)}.post-content p{margin-bottom:1rem;line-height:1.8;color:var(--clr-text-muted)}.post-content ul,.post-content ol{margin-left:2rem;margin-bottom:1rem}.post-content li{margin-bottom:0.5rem;color:var(--clr-text-muted)}.footer{background:var(--clr-deep-blue);color:var(--clr-white);padding:3rem 2rem;margin-top:4rem}.footer-content{max-width:1200px;margin:0 auto;text-align:center}.footer h3{color:var(--clr-gold);margin-bottom:1rem}.footer p{color:rgba(255,255,255,0.8);line-height:1.8;max-width:800px;margin:0 auto 2rem}.footer-disclaimer{border-top:1px solid rgba(255,255,255,0.2);padding-top:2rem;margin-top:2rem;font-size:0.875rem;color:rgba(255,255,255,0.6)}.cta-box{background:var(--gradient-cta);color:var(--clr-white);padding:3rem 2rem;border-radius:var(--radius);text-align:center;margin:3rem auto;max-width:900px;box-shadow:var(--shadow-lg)}.cta-box h3{font-size:2rem;margin-bottom:1rem}.cta-box p{font-size:1.125rem;margin-bottom:2rem;opacity:0.95}@media(max-width:768px){.header-container{flex-direction:column;text-align:center}.nav{justify-content:center}.hero{padding:3rem 1.5rem}.hero h1{font-size:2rem}.section{padding:3rem 0}.services-grid,.testimonials-grid,.blog-grid{grid-template-columns:1fr}.bio-section,.post-content{padding:2rem}}@media(max-width:480px){.container{padding:0 1rem}.btn{padding:0.65rem 1.25rem;font-size:0.95rem}.service-card{margin-bottom:1rem}}
-  ]]></b:skin>
-  
-  <b:template-skin>
-    <b:variable default='960px' name='content.width' type='length' value='1200px'/>
-  </b:template-skin>
+  <b:skin><![CDATA[]]></b:skin>
 </head>
 
 <body>
-  <!-- Header -->
   <header class='header'>
     <div class='header-container'>
       <a class='logo' expr:href='data:blog.homepageUrl'>Divine Spiritual Guidance</a>
@@ -204,376 +174,312 @@
     </div>
   </header>
 
-  <!-- Main Content Section -->
-  <b:section id='main' maxwidgets='1' showaddelement='no'>
-    <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' visible='true'>
-      <b:includable id='main' var='top'>
-        
-  <b:if cond='data:blog.pageType == &quot;index&quot;'>
-    <!-- Hero Section -->
-    <section class='hero'>
-      <div class='hero-container'>
-        <h1>Get Your Prophetic Word for 2025</h1>
-        <p>Receive divine direction, breakthrough answers &amp; biblical wisdom from an experienced spiritual advisor. Fast 24-48hr delivery.</p>
-        <div class='rating'>
-          <svg class='star' fill='currentColor' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-          <svg class='star' fill='currentColor' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-          <svg class='star' fill='currentColor' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-          <svg class='star' fill='currentColor' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-          <svg class='star' fill='currentColor' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-          <span><strong>5.0</strong> (490+ Reviews)</span>
-        </div>
-        <div class='hero-cta'>
-          <a class='btn btn-primary' href='https://wa.me/21693816607?text=Hi%2C%20I%27d%20like%20to%20get%20my%20prophetic%20word!' rel='nofollow noopener' style='font-size:1.125rem;padding:1rem 2rem' target='_blank'>Get Your Prophetic Word Now</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- What is a Prophetic Word Section -->
-    <section class='section'>
-      <div class='container'>
-        <div class='value-prop'>
-          <h2>What is a Prophetic Word?</h2>
-          <p>A prophetic word is divine spiritual guidance that reveals God's purpose, direction, and insight for your life. It provides clarity about your future, helps you understand your calling, and offers biblical wisdom for important decisions. Through prayer and spiritual discernment, I deliver personalized prophetic words that speak directly to your unique situation, helping you navigate life's challenges with confidence and faith.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Why Choose Us Section -->
-    <section class='section section-muted'>
-      <div class='container'>
-        <div class='section-title'>
-          <h2>Why Choose Our Prophetic Services?</h2>
-          <p>Experience transformative spiritual guidance backed by 20+ years of experience</p>
-        </div>
-        <div class='features'>
-          <div class='feature'>
-            <div class='feature-icon'>⚡</div>
-            <h3>Fast Delivery</h3>
-            <p>Receive your prophetic word within 24-48 hours via WhatsApp</p>
-          </div>
-          <div class='feature'>
-            <div class='feature-icon'>✓</div>
-            <h3>490+ 5-Star Reviews</h3>
-            <p>Join hundreds of satisfied clients who experienced breakthrough</p>
-          </div>
-          <div class='feature'>
-            <div class='feature-icon'>📖</div>
-            <h3>Biblically Rooted</h3>
-            <p>Every word is grounded in scripture and spiritual truth</p>
-          </div>
-          <div class='feature'>
-            <div class='feature-icon'>👤</div>
-            <h3>Personalized Guidance</h3>
-            <p>Each prophetic word is uniquely crafted for your situation</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class='section' id='services'>
-      <div class='container'>
-        <div class='section-title'>
-          <h2>Our Prophetic Services</h2>
-          <p>Choose the prophetic guidance that speaks to your heart</p>
-        </div>
-        <div class='services-grid'>
-          <div class='service-card'>
-            <div class='service-image'></div>
-            <div class='service-content'>
-              <h3 class='service-title'>Divine Word for 2025</h3>
-              <p class='service-description'>Receive a powerful prophetic word specifically for your life in 2025. Discover divine direction, breakthrough answers, and biblical wisdom tailored to your unique journey.</p>
-              <div class='service-rating'>
-                <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-                <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-                <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-                <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-                <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-                <span><strong>5.0</strong> (490+)</span>
+  <b:section class='main' id='main' maxwidgets='1' showaddelement='no'>
+    <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'>
+      <b:includable id='main'>
+        <b:if cond='data:blog.pageType == "index"'>
+          
+          <section class='hero'>
+            <div class='container'>
+              <h1>Get Your Prophetic Word for 2025</h1>
+              <p>Receive divine direction, breakthrough answers and biblical wisdom from an experienced spiritual advisor. Fast 24-48hr delivery.</p>
+              <div class='rating'>
+                <span class='star'>★★★★★</span>
+                <span><strong>5.0</strong> (490+ Reviews)</span>
               </div>
-              <div class='service-price-row'>
-                <div class='price-info'>
-                  <div class='price-label'>Starting at</div>
-                  <div class='price'>$5</div>
+              <div style='margin-top:2rem'>
+                <a class='btn btn-primary' href='https://wa.me/21693816607?text=Hi%2C%20I%27d%20like%20to%20get%20my%20prophetic%20word!' rel='nofollow noopener' style='font-size:1.125rem;padding:1rem 2rem' target='_blank'>Get Your Prophetic Word Now</a>
+              </div>
+            </div>
+          </section>
+
+          <section class='section'>
+            <div class='container'>
+              <div class='value-prop'>
+                <h2>What is a Prophetic Word?</h2>
+                <p>A prophetic word is divine spiritual guidance that reveals God's purpose, direction, and insight for your life. It provides clarity about your future, helps you understand your calling, and offers biblical wisdom for important decisions. Through prayer and spiritual discernment, I deliver personalized prophetic words that speak directly to your unique situation, helping you navigate life's challenges with confidence and faith.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class='section section-muted'>
+            <div class='container'>
+              <div class='section-title'>
+                <h2>Why Choose Our Prophetic Services?</h2>
+                <p>Experience transformative spiritual guidance backed by 20+ years of experience</p>
+              </div>
+              <div class='features'>
+                <div class='feature'>
+                  <div class='feature-icon'>⚡</div>
+                  <h3>Fast Delivery</h3>
+                  <p>Receive your prophetic word within 24-48 hours via WhatsApp</p>
                 </div>
-                <a class='btn btn-primary' href='https://wa.me/21693816607?text=Hi%2C%20I%27d%20like%20to%20order%20the%20Divine%20Word%20for%202025%20service%20%28%245%29' rel='nofollow noopener' target='_blank'>Order Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class='service-card'>
-            <div class='service-image'></div>
-            <div class='service-content'>
-              <h3 class='service-title'>Prophetic Blessings Package</h3>
-              <p class='service-description'>Experience divine favor through prophetic blessings. Includes personalized prayers for breakthrough, protection, and abundance in every area of your life.</p>
-              <div class='service-rating'>
-                <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-                <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-                <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-                <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-                <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-                <span><strong>5.0</strong> (490+)</span>
-              </div>
-              <div class='service-price-row'>
-                <div class='price-info'>
-                  <div class='price-label'>Starting at</div>
-                  <div class='price'>$10</div>
+                <div class='feature'>
+                  <div class='feature-icon'>✓</div>
+                  <h3>490+ 5-Star Reviews</h3>
+                  <p>Join hundreds of satisfied clients who experienced breakthrough</p>
                 </div>
-                <a class='btn btn-primary' href='https://wa.me/21693816607?text=Hi%2C%20I%27d%20like%20to%20order%20the%20Prophetic%20Blessings%20Package%20%28%2410%29' rel='nofollow noopener' target='_blank'>Order Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class='service-card'>
-            <div class='service-image'></div>
-            <div class='service-content'>
-              <h3 class='service-title'>Biblical Spiritual Word</h3>
-              <p class='service-description'>Receive biblically-grounded spiritual guidance for your life decisions. Each word is rooted in scripture and delivered with prophetic clarity.</p>
-              <div class='service-rating'>
-                <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-                <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-                <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-                <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-                <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-                <span><strong>5.0</strong> (490+)</span>
-              </div>
-              <div class='service-price-row'>
-                <div class='price-info'>
-                  <div class='price-label'>Starting at</div>
-                  <div class='price'>$15</div>
+                <div class='feature'>
+                  <div class='feature-icon'>📖</div>
+                  <h3>Biblically Rooted</h3>
+                  <p>Every word is grounded in scripture and spiritual truth</p>
                 </div>
-                <a class='btn btn-primary' href='https://wa.me/21693816607?text=Hi%2C%20I%27d%20like%20to%20order%20the%20Biblical%20Spiritual%20Word%20service%20%28%2415%29' rel='nofollow noopener' target='_blank'>Order Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class='service-card'>
-            <div class='service-image'></div>
-            <div class='service-content'>
-              <h3 class='service-title'>Prophetic Word for Your Life</h3>
-              <p class='service-description'>Comprehensive prophetic reading covering your destiny, purpose, relationships, career, and spiritual journey. The most detailed and transformative prophetic guidance.</p>
-              <div class='service-rating'>
-                <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-                <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-                <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-                <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-                <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-                <span><strong>5.0</strong> (490+)</span>
-              </div>
-              <div class='service-price-row'>
-                <div class='price-info'>
-                  <div class='price-label'>Starting at</div>
-                  <div class='price'>$30</div>
+                <div class='feature'>
+                  <div class='feature-icon'>👤</div>
+                  <h3>Personalized Guidance</h3>
+                  <p>Each prophetic word is uniquely crafted for your situation</p>
                 </div>
-                <a class='btn btn-primary' href='https://wa.me/21693816607?text=Hi%2C%20I%27d%20like%20to%20order%20the%20Prophetic%20Word%20for%20Your%20Life%20service%20%28%2430%29' rel='nofollow noopener' target='_blank'>Order Now</a>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+          </section>
 
-    <!-- Testimonials Section -->
-    <section class='section section-muted' id='testimonials'>
-      <div class='container'>
-        <div class='section-title'>
-          <h2>Client Testimonials</h2>
-          <p>Real stories from people whose lives were transformed</p>
-        </div>
-        <div class='testimonials-grid'>
-          <div class='testimonial-card'>
-            <div class='testimonial-rating'>
-              <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-              <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-              <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-              <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-              <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-            </div>
-            <p class='testimonial-text'>"Absolutely amazing experience! The prophetic word I received was incredibly accurate and gave me the guidance I needed. Highly recommend!"</p>
-            <div class='testimonial-footer'>
-              <div class='testimonial-author'>Sarah M.</div>
-              <div class='testimonial-service'>Divine Word for 2025</div>
-            </div>
-          </div>
+          <section class='section' id='services'>
+            <div class='container'>
+              <div class='section-title'>
+                <h2>Our Prophetic Services</h2>
+                <p>Choose the prophetic guidance that speaks to your heart</p>
+              </div>
+              <div class='services-grid'>
+                
+                <div class='service-card'>
+                  <div class='service-image'>🙏</div>
+                  <div class='service-content'>
+                    <h3 class='service-title'>Divine Word for 2025</h3>
+                    <p class='service-description'>Receive a powerful prophetic word specifically for your life in 2025. Discover divine direction, breakthrough answers, and biblical wisdom tailored to your unique journey.</p>
+                    <div class='service-rating'>
+                      <span>★★★★★</span>
+                      <span><strong>5.0</strong> (490+)</span>
+                    </div>
+                    <div class='service-price-row'>
+                      <div class='price-info'>
+                        <div class='price-label'>Starting at</div>
+                        <div class='price'>$5</div>
+                      </div>
+                      <a class='btn btn-primary' href='https://wa.me/21693816607?text=Hi%2C%20I%27d%20like%20to%20order%20the%20Divine%20Word%20for%202025%20service%20%28%245%29' rel='nofollow noopener' target='_blank'>Order Now</a>
+                    </div>
+                  </div>
+                </div>
 
-          <div class='testimonial-card'>
-            <div class='testimonial-rating'>
-              <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-              <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-              <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-              <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-              <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-            </div>
-            <p class='testimonial-text'>"John has a true gift. The blessing prayer brought peace to my life and clarity about my future. Worth every penny!"</p>
-            <div class='testimonial-footer'>
-              <div class='testimonial-author'>Michael R.</div>
-              <div class='testimonial-service'>Prophetic Blessings</div>
-            </div>
-          </div>
+                <div class='service-card'>
+                  <div class='service-image'>✨</div>
+                  <div class='service-content'>
+                    <h3 class='service-title'>Prophetic Blessings Package</h3>
+                    <p class='service-description'>Experience divine favor through prophetic blessings. Includes personalized prayers for breakthrough, protection, and abundance in every area of your life.</p>
+                    <div class='service-rating'>
+                      <span>★★★★★</span>
+                      <span><strong>5.0</strong> (490+)</span>
+                    </div>
+                    <div class='service-price-row'>
+                      <div class='price-info'>
+                        <div class='price-label'>Starting at</div>
+                        <div class='price'>$10</div>
+                      </div>
+                      <a class='btn btn-primary' href='https://wa.me/21693816607?text=Hi%2C%20I%27d%20like%20to%20order%20the%20Prophetic%20Blessings%20Package%20%28%2410%29' rel='nofollow noopener' target='_blank'>Order Now</a>
+                    </div>
+                  </div>
+                </div>
 
-          <div class='testimonial-card'>
-            <div class='testimonial-rating'>
-              <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-              <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-              <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-              <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-              <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-            </div>
-            <p class='testimonial-text'>"The spiritual guidance was exactly what I needed. Very professional and delivered quickly. Will definitely order again!"</p>
-            <div class='testimonial-footer'>
-              <div class='testimonial-author'>Jennifer L.</div>
-              <div class='testimonial-service'>Biblical Word</div>
-            </div>
-          </div>
+                <div class='service-card'>
+                  <div class='service-image'>📖</div>
+                  <div class='service-content'>
+                    <h3 class='service-title'>Biblical Spiritual Word</h3>
+                    <p class='service-description'>Receive biblically-grounded spiritual guidance for your life decisions. Each word is rooted in scripture and delivered with prophetic clarity.</p>
+                    <div class='service-rating'>
+                      <span>★★★★★</span>
+                      <span><strong>5.0</strong> (490+)</span>
+                    </div>
+                    <div class='service-price-row'>
+                      <div class='price-info'>
+                        <div class='price-label'>Starting at</div>
+                        <div class='price'>$15</div>
+                      </div>
+                      <a class='btn btn-primary' href='https://wa.me/21693816607?text=Hi%2C%20I%27d%20like%20to%20order%20the%20Biblical%20Spiritual%20Word%20service%20%28%2415%29' rel='nofollow noopener' target='_blank'>Order Now</a>
+                    </div>
+                  </div>
+                </div>
 
-          <div class='testimonial-card'>
-            <div class='testimonial-rating'>
-              <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-              <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-              <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-              <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-              <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
+                <div class='service-card'>
+                  <div class='service-image'>🌟</div>
+                  <div class='service-content'>
+                    <h3 class='service-title'>Prophetic Word for Your Life</h3>
+                    <p class='service-description'>Comprehensive prophetic reading covering your destiny, purpose, relationships, career, and spiritual journey. The most detailed and transformative prophetic guidance.</p>
+                    <div class='service-rating'>
+                      <span>★★★★★</span>
+                      <span><strong>5.0</strong> (490+)</span>
+                    </div>
+                    <div class='service-price-row'>
+                      <div class='price-info'>
+                        <div class='price-label'>Starting at</div>
+                        <div class='price'>$30</div>
+                      </div>
+                      <a class='btn btn-primary' href='https://wa.me/21693816607?text=Hi%2C%20I%27d%20like%20to%20order%20the%20Prophetic%20Word%20for%20Your%20Life%20service%20%28%2430%29' rel='nofollow noopener' target='_blank'>Order Now</a>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
             </div>
-            <p class='testimonial-text'>"Powerful and transformative! The prophetic word helped me make important life decisions. Thank you so much!"</p>
-            <div class='testimonial-footer'>
-              <div class='testimonial-author'>David K.</div>
-              <div class='testimonial-service'>Word for Your Life</div>
+          </section>
+
+          <section class='section section-muted' id='testimonials'>
+            <div class='container'>
+              <div class='section-title'>
+                <h2>Client Testimonials</h2>
+                <p>Real stories from people whose lives were transformed</p>
+              </div>
+              <div class='testimonials-grid'>
+                
+                <div class='testimonial-card'>
+                  <div class='testimonial-rating'>★★★★★</div>
+                  <p class='testimonial-text'>"Absolutely amazing experience! The prophetic word I received was incredibly accurate and gave me the guidance I needed. Highly recommend!"</p>
+                  <div class='testimonial-footer'>
+                    <div class='testimonial-author'>Sarah M.</div>
+                    <div class='testimonial-service'>Divine Word for 2025</div>
+                  </div>
+                </div>
+
+                <div class='testimonial-card'>
+                  <div class='testimonial-rating'>★★★★★</div>
+                  <p class='testimonial-text'>"John has a true gift. The blessing prayer brought peace to my life and clarity about my future. Worth every penny!"</p>
+                  <div class='testimonial-footer'>
+                    <div class='testimonial-author'>Michael R.</div>
+                    <div class='testimonial-service'>Prophetic Blessings</div>
+                  </div>
+                </div>
+
+                <div class='testimonial-card'>
+                  <div class='testimonial-rating'>★★★★★</div>
+                  <p class='testimonial-text'>"The spiritual guidance was exactly what I needed. Very professional and delivered quickly. Will definitely order again!"</p>
+                  <div class='testimonial-footer'>
+                    <div class='testimonial-author'>Jennifer L.</div>
+                    <div class='testimonial-service'>Biblical Word</div>
+                  </div>
+                </div>
+
+                <div class='testimonial-card'>
+                  <div class='testimonial-rating'>★★★★★</div>
+                  <p class='testimonial-text'>"Powerful and transformative! The prophetic word helped me make important life decisions. Thank you so much!"</p>
+                  <div class='testimonial-footer'>
+                    <div class='testimonial-author'>David K.</div>
+                    <div class='testimonial-service'>Word for Your Life</div>
+                  </div>
+                </div>
+
+                <div class='testimonial-card'>
+                  <div class='testimonial-rating'>★★★★★</div>
+                  <p class='testimonial-text'>"I was skeptical at first, but the accuracy and depth of the spiritual reading blew me away. Truly blessed to have found this service!"</p>
+                  <div class='testimonial-footer'>
+                    <div class='testimonial-author'>Lisa P.</div>
+                    <div class='testimonial-service'>Divine Word for 2025</div>
+                  </div>
+                </div>
+
+                <div class='testimonial-card'>
+                  <div class='testimonial-rating'>★★★★★</div>
+                  <p class='testimonial-text'>"Outstanding service! The biblical guidance provided was insightful and encouraging. My faith has been strengthened tremendously."</p>
+                  <div class='testimonial-footer'>
+                    <div class='testimonial-author'>Robert T.</div>
+                    <div class='testimonial-service'>Biblical Word</div>
+                  </div>
+                </div>
+                
+              </div>
             </div>
-          </div>
+          </section>
 
-          <div class='testimonial-card'>
-            <div class='testimonial-rating'>
-              <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-              <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-              <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-              <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-              <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
+          <section class='section'>
+            <div class='container'>
+              <div class='bio-section'>
+                <h2>Meet Your Spiritual Advisor</h2>
+                <h3>John S - Master Prophet and Spiritual Guide</h3>
+                <p>With over 20 years of experience in prophetic ministry, I have dedicated my life to helping individuals discover God's divine purpose and direction. My journey began with a powerful encounter with the Holy Spirit, which ignited a passion for delivering accurate, biblically-grounded prophetic words that transform lives.</p>
+                <p>Throughout my ministry, I have witnessed countless breakthroughs, healings, and life transformations through the power of prophetic guidance. Each prophetic word I deliver is crafted through prayer, biblical study, and spiritual discernment, ensuring that you receive authentic, life-changing guidance.</p>
+                <h3>Why Work With Me?</h3>
+                <ul>
+                  <li>20+ years of proven prophetic accuracy and spiritual guidance</li>
+                  <li>490+ five-star reviews from satisfied clients worldwide</li>
+                  <li>Biblically-rooted approach grounded in scripture and prayer</li>
+                  <li>Personalized guidance tailored to your unique life situation</li>
+                  <li>Fast 24-48 hour delivery for timely spiritual insight</li>
+                  <li>Commitment to confidentiality, integrity, and spiritual authenticity</li>
+                </ul>
+                <p>My mission is to help you unlock your divine destiny, navigate life's challenges with confidence, and experience the fullness of God's purpose for your life. I believe that every person has a unique calling, and through prophetic insight, you can discover and fulfill that calling.</p>
+                <div style='margin-top:2rem'>
+                  <a class='btn btn-primary' href='https://wa.me/21693816607?text=Hi%2C%20I%27d%20like%20to%20get%20my%20prophetic%20word!' rel='nofollow noopener' style='font-size:1.125rem;padding:1rem 2rem' target='_blank'>Get Your Prophetic Word Today</a>
+                </div>
+              </div>
             </div>
-            <p class='testimonial-text'>"I was skeptical at first, but the accuracy and depth of the spiritual reading blew me away. Truly blessed to have found this service!"</p>
-            <div class='testimonial-footer'>
-              <div class='testimonial-author'>Lisa P.</div>
-              <div class='testimonial-service'>Divine Word for 2025</div>
+          </section>
+
+          <section class='section section-muted' id='faq'>
+            <div class='container'>
+              <div class='section-title'>
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about our prophetic services</p>
+              </div>
+              <div class='faq'>
+                
+                <div class='faq-item'>
+                  <h3 class='faq-question'>What is a prophetic word?</h3>
+                  <p class='faq-answer'>A prophetic word is divine spiritual guidance that reveals God's purpose, direction, and insight for your life. It provides clarity about your future, helps you understand your calling, and offers biblical wisdom for important decisions. Prophetic words are rooted in scripture and delivered through spiritual discernment.</p>
+                </div>
+                
+                <div class='faq-item'>
+                  <h3 class='faq-question'>How do I receive my prophetic word?</h3>
+                  <p class='faq-answer'>After selecting your service, you'll receive a WhatsApp contact link. Simply send your order details and transaction confirmation via WhatsApp to +216-93-816-607. Your personalized prophetic word will be delivered within 24-48 hours through written text or audio message.</p>
+                </div>
+                
+                <div class='faq-item'>
+                  <h3 class='faq-question'>How accurate are the prophetic words?</h3>
+                  <p class='faq-answer'>Our prophetic words have a proven track record with 490+ five-star reviews. Clients consistently report experiencing breakthrough, clarity, and accurate guidance. Each word is delivered through prayer, biblical study, and spiritual discernment to ensure authenticity and accuracy.</p>
+                </div>
+                
+                <div class='faq-item'>
+                  <h3 class='faq-question'>What makes your service different?</h3>
+                  <p class='faq-answer'>We combine 20+ years of prophetic experience with a commitment to biblical accuracy and personalized guidance. Each word is uniquely crafted for you, delivered quickly (24-48hrs), and backed by hundreds of testimonials. We focus on practical, life-changing spiritual insight that you can apply immediately.</p>
+                </div>
+                
+                <div class='faq-item'>
+                  <h3 class='faq-question'>How long does delivery take?</h3>
+                  <p class='faq-answer'>Most prophetic words are delivered within 24-48 hours after order confirmation. Rush delivery may be available upon request. You'll receive your prophetic word via WhatsApp in a format that's easy to save, review, and reflect upon.</p>
+                </div>
+                
+                <div class='faq-item'>
+                  <h3 class='faq-question'>Can I ask specific questions?</h3>
+                  <p class='faq-answer'>Yes! When placing your order via WhatsApp, you can include specific questions or areas of your life where you need guidance (relationships, career, ministry, finances, health, etc.). This helps us deliver the most relevant and impactful prophetic word for your situation.</p>
+                </div>
+                
+              </div>
             </div>
-          </div>
+          </section>
 
-          <div class='testimonial-card'>
-            <div class='testimonial-rating'>
-              <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-              <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-              <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-              <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
-              <svg class='star' fill='currentColor' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/></svg>
+          <section class='section'>
+            <div class='container'>
+              <div class='cta-box'>
+                <h3>Ready to Receive Your Prophetic Word?</h3>
+                <p>Join 490+ satisfied clients who have experienced breakthrough, clarity, and divine direction through our prophetic services. Your transformation starts today.</p>
+                <a class='btn btn-primary' href='https://wa.me/21693816607?text=Hi%2C%20I%27d%20like%20to%20get%20my%20prophetic%20word!' rel='nofollow noopener' style='font-size:1.125rem;padding:1rem 2.5rem;background:white;color:#4a90d9' target='_blank'>Get Started Now</a>
+              </div>
             </div>
-            <p class='testimonial-text'>"Outstanding service! The biblical guidance provided was insightful and encouraging. My faith has been strengthened tremendously."</p>
-            <div class='testimonial-footer'>
-              <div class='testimonial-author'>Robert T.</div>
-              <div class='testimonial-service'>Biblical Word</div>
+          </section>
+
+        </b:if>
+
+        <b:if cond='data:blog.pageType != "index"'>
+          <div class='container'>
+            <div class='post-content'>
+              <h1><data:blog.pageName/></h1>
+              <b:loop values='data:posts' var='post'>
+                <data:post.body/>
+              </b:loop>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About John S Section -->
-    <section class='section'>
-      <div class='container'>
-        <div class='bio-section'>
-          <h2>Meet Your Spiritual Advisor</h2>
-          <h3>John S - Master Prophet &amp; Spiritual Guide</h3>
-          <p>With over 20 years of experience in prophetic ministry, I have dedicated my life to helping individuals discover God's divine purpose and direction. My journey began with a powerful encounter with the Holy Spirit, which ignited a passion for delivering accurate, biblically-grounded prophetic words that transform lives.</p>
-          <p>Throughout my ministry, I have witnessed countless breakthroughs, healings, and life transformations through the power of prophetic guidance. Each prophetic word I deliver is crafted through prayer, biblical study, and spiritual discernment, ensuring that you receive authentic, life-changing guidance.</p>
-          <h3>Why Work With Me?</h3>
-          <ul>
-            <li>20+ years of proven prophetic accuracy and spiritual guidance</li>
-            <li>490+ five-star reviews from satisfied clients worldwide</li>
-            <li>Biblically-rooted approach grounded in scripture and prayer</li>
-            <li>Personalized guidance tailored to your unique life situation</li>
-            <li>Fast 24-48 hour delivery for timely spiritual insight</li>
-            <li>Commitment to confidentiality, integrity, and spiritual authenticity</li>
-          </ul>
-          <p>My mission is to help you unlock your divine destiny, navigate life's challenges with confidence, and experience the fullness of God's purpose for your life. I believe that every person has a unique calling, and through prophetic insight, you can discover and fulfill that calling.</p>
-          <div style='margin-top:2rem'>
-            <a class='btn btn-primary' href='https://wa.me/21693816607?text=Hi%2C%20I%27d%20like%20to%20get%20my%20prophetic%20word!' rel='nofollow noopener' style='font-size:1.125rem;padding:1rem 2rem' target='_blank'>Get Your Prophetic Word Today</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class='section section-muted' id='faq'>
-      <div class='container'>
-        <div class='section-title'>
-          <h2>Frequently Asked Questions</h2>
-          <p>Everything you need to know about our prophetic services</p>
-        </div>
-        <div class='faq'>
-          <div class='faq-item'>
-            <h3 class='faq-question'>What is a prophetic word?</h3>
-            <p class='faq-answer'>A prophetic word is divine spiritual guidance that reveals God's purpose, direction, and insight for your life. It provides clarity about your future, helps you understand your calling, and offers biblical wisdom for important decisions. Prophetic words are rooted in scripture and delivered through spiritual discernment.</p>
-          </div>
-          
-          <div class='faq-item'>
-            <h3 class='faq-question'>How do I receive my prophetic word?</h3>
-            <p class='faq-answer'>After selecting your service, you'll receive a WhatsApp contact link. Simply send your order details and transaction confirmation via WhatsApp to +216-93-816-607. Your personalized prophetic word will be delivered within 24-48 hours through written text or audio message.</p>
-          </div>
-          
-          <div class='faq-item'>
-            <h3 class='faq-question'>How accurate are the prophetic words?</h3>
-            <p class='faq-answer'>Our prophetic words have a proven track record with 490+ five-star reviews. Clients consistently report experiencing breakthrough, clarity, and accurate guidance. Each word is delivered through prayer, biblical study, and spiritual discernment to ensure authenticity and accuracy.</p>
-          </div>
-          
-          <div class='faq-item'>
-            <h3 class='faq-question'>What makes your service different?</h3>
-            <p class='faq-answer'>We combine 20+ years of prophetic experience with a commitment to biblical accuracy and personalized guidance. Each word is uniquely crafted for you, delivered quickly (24-48hrs), and backed by hundreds of testimonials. We focus on practical, life-changing spiritual insight that you can apply immediately.</p>
-          </div>
-          
-          <div class='faq-item'>
-            <h3 class='faq-question'>How long does delivery take?</h3>
-            <p class='faq-answer'>Most prophetic words are delivered within 24-48 hours after order confirmation. Rush delivery may be available upon request. You'll receive your prophetic word via WhatsApp in a format that's easy to save, review, and reflect upon.</p>
-          </div>
-          
-          <div class='faq-item'>
-            <h3 class='faq-question'>Can I ask specific questions?</h3>
-            <p class='faq-answer'>Yes! When placing your order via WhatsApp, you can include specific questions or areas of your life where you need guidance (relationships, career, ministry, finances, health, etc.). This helps us deliver the most relevant and impactful prophetic word for your situation.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Final CTA Section -->
-    <section class='section'>
-      <div class='container'>
-        <div class='cta-box'>
-          <h3>Ready to Receive Your Prophetic Word?</h3>
-          <p>Join 490+ satisfied clients who have experienced breakthrough, clarity, and divine direction through our prophetic services. Your transformation starts today.</p>
-          <a class='btn btn-primary' href='https://wa.me/21693816607?text=Hi%2C%20I%27d%20like%20to%20get%20my%20prophetic%20word!' rel='nofollow noopener' style='font-size:1.125rem;padding:1rem 2.5rem;background:white;color:hsl(220,70%,45%)' target='_blank'>Get Started Now</a>
-        </div>
-      </div>
-    </section>
-
-  </b:if>
-
-  <!-- Blog Posts Section -->
-  <b:if cond='data:blog.pageType != &quot;index&quot;'>
-    <div class='container'>
-      <div class='post-content'>
-        <h1><data:blog.pageName/></h1>
-        <b:if cond='data:blog.pageType == &quot;item&quot;'>
-          <div class='blog-meta'>
-            <span><data:post.dateHeader/></span>
           </div>
         </b:if>
-        <data:post.body/>
-      </div>
-    </div>
-  </b:if>
 
       </b:includable>
     </b:widget>
   </b:section>
 
-  <!-- Footer -->
   <footer class='footer'>
     <div class='footer-content'>
       <h3>Divine Spiritual Guidance</h3>
@@ -581,11 +487,10 @@
       <p><strong>Contact:</strong> +216-93-816-607 (WhatsApp)</p>
       <div class='footer-disclaimer'>
         <p><strong>Disclaimer:</strong> Prophetic words and spiritual guidance are provided for inspirational and educational purposes. Results may vary by individual. Our services are designed to complement your personal faith journey and should not replace professional advice for legal, medical, or financial matters. All prophetic words are delivered through prayer and spiritual discernment rooted in biblical principles.</p>
-        <p>&#169; 2025 Divine Spiritual Guidance. All rights reserved.</p>
+        <p>© 2025 Divine Spiritual Guidance. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
-  <b:include data='blog' name='all-head-content'/>
 </body>
 </html>
