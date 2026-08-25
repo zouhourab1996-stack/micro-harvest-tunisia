@@ -131,6 +131,54 @@ const blogPosts = [
     readTime: "10 min read",
     category: "Prophetic Education",
     keywords: "how prophetic words work, prophecy spiritual mechanics, how prophecy functions, prophetic word explanation"
+  },
+  {
+    id: "discern-spiritual-guidance-practical-wisdom",
+    title: "How to Discern Spiritual Guidance Without Losing Practical Wisdom",
+    excerpt: "A grounded Christian approach to prayerful discernment that makes room for Scripture, wise counsel, evidence, and responsible action.",
+    date: "2026-08-25",
+    readTime: "9 min read",
+    category: "Spiritual Discernment",
+    keywords: "how to discern spiritual guidance, Christian discernment and practical wisdom, test spiritual impressions, prayerful decision making",
+    description: "Learn how to discern spiritual guidance with Scripture, wise counsel, evidence, and practical wisdom while avoiding fear, pressure, and guaranteed predictions.",
+    image: "/micro-harvest-tunisia/images/discern-spiritual-guidance.jpg",
+    imageAlt: "Quiet mountain path representing thoughtful spiritual discernment"
+  },
+  {
+    id: "christian-journal-practice-uncertain-seasons",
+    title: "A Christian Journal Practice for Uncertain Seasons",
+    excerpt: "Use a simple, faith-informed journaling rhythm to process uncertainty, notice gratitude, and choose practical next steps without forcing an answer.",
+    date: "2026-08-25",
+    readTime: "8 min read",
+    category: "Prayer & Reflection",
+    keywords: "Christian journal practice for uncertainty, prayer journal prompts for difficult seasons, faith journaling for clarity, Christian reflection journal",
+    description: "Try a simple Christian journal practice for uncertain seasons that combines prayer, honest emotions, Scripture reflection, gratitude, and practical next steps.",
+    image: "/micro-harvest-tunisia/images/christian-journal-uncertain-seasons.jpg",
+    imageAlt: "Open journal beside a cup of tea in soft morning light"
+  },
+  {
+    id: "questions-before-online-prophetic-guidance",
+    title: "Questions to Ask Before Seeking Online Prophetic Guidance",
+    excerpt: "A practical checklist for evaluating online spiritual guidance with transparency, healthy boundaries, informed consent, and freedom from pressure.",
+    date: "2026-08-25",
+    readTime: "10 min read",
+    category: "Choosing Guidance",
+    keywords: "questions before online prophetic guidance, how to choose online spiritual guidance, safe prophetic ministry checklist, responsible Christian spiritual services",
+    description: "Before seeking online prophetic guidance, ask about beliefs, privacy, pricing, boundaries, revisions, accountability, and how the service handles uncertainty and high-stakes decisions.",
+    image: "/micro-harvest-tunisia/images/questions-online-prophetic-guidance.jpg",
+    imageAlt: "Person writing questions in a notebook before making a decision"
+  },
+  {
+    id: "pray-for-clarity-without-guaranteed-answer",
+    title: "How to Pray for Clarity Without Demanding a Guaranteed Answer",
+    excerpt: "A quiet prayer framework for uncertain decisions that leaves room for faith, patience, evidence, wise counsel, and the freedom to revise your plans.",
+    date: "2026-08-25",
+    readTime: "8 min read",
+    category: "Prayer & Clarity",
+    keywords: "how to pray for clarity in a difficult decision, Christian prayer for guidance without signs, prayer for wisdom and patience, faith during uncertainty",
+    description: "Learn how to pray for clarity in difficult decisions without demanding a guaranteed sign, while making room for wisdom, patience, evidence, and responsible action.",
+    image: "/micro-harvest-tunisia/images/pray-for-clarity.jpg",
+    imageAlt: "Sunlight through trees suggesting calm and patient reflection"
   }
 ];
 
@@ -163,9 +211,9 @@ const Blog = () => {
   return (
     <>
       <SEO
-        title="Prophetic Word Blog 2025 | Spiritual Guidance & Biblical Wisdom"
-        description="Read expert articles on receiving prophetic words, spiritual guidance, biblical prophecy, and divine direction. Learn how to hear from God and understand His will for your life in 2025."
-        keywords="prophetic word blog, spiritual guidance articles, biblical prophecy insights, how to receive prophecy, prophetic ministry teachings, divine direction blog, Christian prophecy 2025"
+        title="Prophetic Word Blog | Spiritual Guidance & Biblical Wisdom"
+        description="Read thoughtful articles on spiritual discernment, prayer, biblical wisdom, prophetic guidance, and making faith-informed decisions with practical care."
+        keywords="prophetic word blog, Christian spiritual discernment, prayer for clarity, biblical wisdom articles, online prophetic guidance questions, Christian journaling"
         canonicalUrl={currentUrl}
         structuredData={structuredData}
       />
@@ -181,7 +229,7 @@ const Blog = () => {
                 Prophetic Word & Spiritual Guidance Blog
               </h1>
               <p className="text-xl text-muted-foreground mb-8">
-                Expert insights on receiving prophetic words, understanding biblical prophecy, and walking in your divine purpose for 2025
+                Thoughtful resources for spiritual discernment, prayer, biblical wisdom, and grounded guidance
               </p>
             </div>
           </div>
@@ -192,7 +240,15 @@ const Blog = () => {
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {blogPosts.map((post) => (
-                <Card key={post.id} className="hover:shadow-lg transition-shadow">
+                <Card key={post.id} className="hover:shadow-lg transition-shadow overflow-hidden">
+                  {post.image && (
+                    <img
+                      src={post.image}
+                      alt={post.imageAlt || post.title}
+                      className="w-full aspect-[16/9] object-cover"
+                      loading="lazy"
+                    />
+                  )}
                   <CardHeader>
                     <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
                       <Calendar className="h-4 w-4" />
@@ -226,7 +282,7 @@ const Blog = () => {
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold mb-4">Ready to Receive Your Prophetic Word?</h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Get personalized spiritual guidance and divine direction for your life in 2025
+              Explore thoughtful spiritual guidance for your next season
             </p>
             <Link to="/">
               <Button size="lg" className="text-lg px-8">
