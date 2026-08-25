@@ -55,7 +55,7 @@ User-agent: Google-Extended
 Disallow: /
 
 # Sitemap Location
-Sitemap: https://www.globalfarm.nichesite.org/sitemap.xml
+Sitemap: https://zouhourab1996-stack.github.io/micro-harvest-tunisia/sitemap.xml
 
 # Additional Indexing Instructions
 # Maximum crawling for all major search engines
